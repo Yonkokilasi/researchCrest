@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+    <link href="/mia-proxy/assets/878890a4/css/font-awesome.min.css" rel="stylesheet">
+<link href="/mia-proxy/assets/4debc3e5/css/material-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<link href="/mia-proxy/assets/441c4fed/css/chat-inner.min.css" rel="stylesheet">
+<link href="/mia-proxy/assets/441c4fed/css/orange.min.css" rel="stylesheet"></head>
+<body class="chat-wrapper">
+
+
+<div class="mia-chat-inner">
+    <div class="mia-chat-greeting-part">
+        <div class="mia-chat-header mia-primary-fill">
+            <i class="fa fa-comments-o mia-chat-icon"></i>
+            <span class="mia-chat-header-text">Need assistance? Click here!</span>
+        </div>
+    </div>
+    <div class="mia-chat-dynamic-part">
+        <div class="mia-chat-header mia-primary-fill">
+            <span class="mia-chat-header-text">Online 24/7</span><i class="fa fa-minus mia-chat-icon"></i>
+        </div>
+        <div class="mia-chat-admin-card mia-secondary-fill mia-side-primary-bordered mia-bottom-secondary-bordered mia-chat-hidden">
+            <div class="mia-admin-personal-data">
+                <div class="mia-chat-avatar mia-secondary-bordered"><div class="text-center default-avatar" style="background: #e74ab3; height: 100%; width: 100%; display: table;"><span style="display: table-cell; vertical-align: middle; color: #FFFFFF;">A</span></div></div><div class="mia-chat-admin-personal mia-secondary-text">
+    <p class="mia-chat-admin-name">Agent</p>
+    <p class="mia-chat-admin-position">Customer representative</p>
+</div>
+
+            </div>
+            <div class="mia-chat-vote">
+                <a href="#" data-mia-rate="100" class="fa fa-thumbs-o-up mia-chat-vote-item"></a>
+                <a href="#" data-mia-rate="0" class="fa fa-thumbs-o-down mia-chat-vote-item"></a>
+            </div>
+        </div>
+        <div class="mia-chat-body mia-secondary-fill mia-side-primary-bordered mia-bottom-secondary-bordered">
+            <div class="mia-chat-greeting"></div>
+            <div class="mia-chat-messages"></div>
+            <div class="mia-chat-system-messages"></div>
+        </div>
+        <div class="mia-chat-footer mia-secondary-fill mia-side-primary-bordered mia-bottom-primary-bordered">
+            <form action="#" method="post" enctype="multipart/form-data" class="mia-message-form">
+                <div class="mia-chat-input-group">
+                    <input name="message"
+                           placeholder="Type Message ..."
+                           class="mia-chat-message-input mia-secondary-text mia-secondary-bordered"/>
+                    <div class="mia-chat-file-input-wrapper">
+                        <div class="mia-chat-styled-file-input">
+                            <i class="material-icons mia-chat-upload-icon mia-secondary-text with-hover">attach_file</i>
+                        </div>
+                        <div class="mia-chat-styled-file-loader">
+                            <i class="fa fa-spinner fa-pulse mia-chat-upload-icon mia-secondary-text"></i>
+                        </div>
+                        <input type="file" name="file" class="mia-chat-file-input"/>
+                    </div>
+
+                    <button class="mia-chat-send-message-button mia-primary-fill">
+                        <i class="material-icons">send</i>
+                    </button>
+                </div>
+            </form>
+            <div class="mia-chat-options mia-clear-both">
+                <a href="#" class="mia-third-text mia-chat-option" data-chat-action="quit">Leave chat</a>
+            </div>
+        </div>
+    </div>
+    <div class="mia-chat-rate-part mia-chat-hidden">
+        <div class="mia-chat-header mia-primary-fill">
+            <i class="fa fa-minus mia-chat-icon"></i>
+        </div>
+        <div class="mia-primary-fill mia-rate-head-wrapper">
+            <p class="mia-chat-h1">Was this chat useful for you?</p>
+            <div><span class="mia-chat-small-logo"></span></div>
+        </div>
+        <form>
+            <div class="mia-rate-body
+                        mia-secondary-fill
+                        mia-side-primary-bordered
+                        mia-bottom-secondary-bordered
+                        mia-secondary-text">
+                <div class="mia-rate-message">
+                    Please, give us your feedback
+                    <div class="mia-chat-vote">
+                        <a href="#" data-mia-rate="100" class="fa fa-thumbs-o-up mia-chat-vote-item"></a>
+                        <a href="#" data-mia-rate="0" class="fa fa-thumbs-o-down mia-chat-vote-item"></a>
+                    </div>
+                </div>
+                <p class="mia-label">Comment</p>
+
+                <textarea name="comment" class="mia-secondary-bordered mia-chat-rate-input"></textarea>
+            </div>
+            <div class="mia-rate-footer-wrapper mia-secondary-fill mia-side-primary-bordered mia-bottom-primary-bordered">
+                <button class="mia-primary-fill mia-action-button mia-rate-submit-button">SEND</button>
+                <button class="mia-inactive-fill mia-action-button mia-rate-cancel-button">SKIP</button>
+                <div class="mia-clear-both"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/mia-proxy/assets/d6093464/jquery.min.js"></script>
+<script src="/mia-proxy/assets/ea1bdc7/js.cookie.min.js"></script>
+<script src="/mia-proxy/assets/441c4fed/js/mia-chat.min.js"></script>
+<script>jQuery(function ($) {
+$('.mia-chat-inner').miaChat({"address":"wss://grademiners.com/mia-wss","chatId":"ddd91a801223474a8532319dfe1146d6","adminName":"Agent","visitorName":"Visitor","uploadUrl":"/mia-proxy/chat/actions/upload-files","chatRate":null,"clientIp":"142.4.198.25"})
+});</script></body>
+</html>
