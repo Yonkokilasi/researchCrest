@@ -59,3 +59,11 @@ $(document).ready(function () {
         document.body.appendChild(css);
     };
 });
+
+function sendMail() {
+    event.preventDefault();
+    var email = $('#email-1').val();
+    var e = document.getElementById("typeOfWork1");
+    var message = e.options[e.selectedIndex].text;
+    window.location.href = 'mailto:yonkokilasi@gmail.com?subject=The subject -Research Paper web form from ' + ' (' + email + ')' + '&body= Can you write a paper on :' + message;
+}
