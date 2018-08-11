@@ -729,7 +729,17 @@ h2 {
         margin: 1px 0 5px 0
     }
 }
-
+.calc_order {
+    margin-top: 0;
+    border-color: white;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+.calc_order:hover{
+    border-color: black;
+    color: black;
+}
 .header__buttons a[href*="/order"] {
     display: inline-block;
     vertical-align: middle;
