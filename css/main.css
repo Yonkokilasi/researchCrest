@@ -403,10 +403,6 @@ h2 {
     }
 }
 
-.i-flag-us {
-    background-image: url(/wp-content/themes/grademiners-ux/img/icons/i-flag-us.png)
-}
-
 .i-fill-form {
     background-image: url(../img/icons/i-contract.svg)
 }
@@ -545,9 +541,6 @@ h2 {
     margin: 0
 }
 
-.header__phone .i-flag.i-flag-us {
-    background-image: url(/wp-content/themes/grademiners-ux/reviews-page/images/i-flag-us.svg)
-}
 
 .header__phone-img {
     margin: 0 6px
@@ -643,7 +636,6 @@ h2 {
 }
 
 .nav ul .nav-reviews a::after {
-    content: url(/wp-content/themes/grademiners-ux/reviews-page/images/star.png);
     display: block;
     width: 62px;
     height: 8px;
@@ -1211,7 +1203,7 @@ select {
     content: '';
     position: absolute;
     z-index: -1;
-    background: #FED18C url(../img/email-collector.png) 100% 0;
+    background-color: #FED18C;
     top: 0;
     right: -500000px;
     width: 1000000px;
@@ -1436,297 +1428,6 @@ select {
 
 select.select-type-of-work {
     margin-top: 0;
-}
-
-.real-time {
-    position: fixed;
-    max-width: 260px;
-    background: rgba(255, 255, 255, .9);
-    bottom: 50%;
-    -webkit-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-    z-index: 999;
-    display: none;
-    left: 10px;
-    right: 0
-}
-
-.real-time::after,
-.real-time::before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    top: -5px;
-    height: 5px;
-    width: 50%
-}
-
-.real-time::before {
-    left: 0;
-    background: #f7b100;
-    -webkit-border-radius: 15px 0 0;
-    border-radius: 15px 0 0
-}
-
-.real-time::after {
-    right: 0;
-    background: #3f3f41;
-    -webkit-border-radius: 0 15px 0 0;
-    border-radius: 0 15px 0 0
-}
-
-.real-time .close {
-    color: #464646;
-    right: 8px;
-    top: 0;
-    position: absolute;
-    font-size: 14px
-}
-
-.real-time-container {
-    padding: 25px 20px 10px
-}
-
-.real-time__widget-ava {
-    -webkit-border-radius: 100%;
-    border-radius: 100%;
-    border: 1px solid #fc9f09;
-    width: 44px;
-    height: 44px;
-    float: left
-}
-
-.real-time__widget-ava img {
-    width: 23px;
-    margin: 0 auto;
-    display: block;
-    height: inherit
-}
-
-.real-time__widget-text {
-    font-family: Poppinsmedium, sans-serif;
-    color: #000;
-    font-size: 14px;
-    margin: 0 0 0 54px;
-    padding: 4px 0 0
-}
-
-.real-time__widget-header {
-    font-family: Poppinsmedium, sans-serif;
-    color: #000;
-    font-size: 14px;
-    padding: 0 0 10px 0;
-    border-bottom: 1px solid #e6e6e6
-}
-
-.real-time__widget-header .delivered-wrap {
-    margin: 4px 0 0;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -moz-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex
-}
-
-.real-time__widget-header .delivered-wrap__left {
-    font-weight: 400;
-    color: #686868
-}
-
-.real-time__widget-header .delivered-wrap__right {
-    padding: 0 0 0 4px
-}
-
-.real-time__widget-header .delivered-wrap__rate {
-    background: url(/wp-content/themes/grademiners-ux/img/real-time/star.png) no-repeat;
-    height: 12px;
-    margin-top: 2px
-}
-
-.real-time__widget-footer {
-    margin: 8px 0 0;
-    font-family: Poppinsmedium, sans-serif;
-    color: #000;
-    font-size: 14px
-}
-
-.real-time__widget-info {
-    border-bottom: 1px solid #e6e6e6;
-    margin: 5px 0 0
-}
-
-.real-time__widget-info__item {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-family: Poppinsmedium, sans-serif;
-    color: #686868;
-    font-size: 12px;
-    margin: 0 0 9px 0
-}
-
-.real-time__widget-info__item .fa {
-    color: #FED18C;
-    padding-right: 12px
-}
-
-.real-time__widget-info__item .fa.fa-graduation-cap {
-    float: left;
-    padding: 1px 8px 0 0
-}
-
-.real-time__widget-info__level-left {
-    width: 118px;
-    float: left
-}
-
-.real-time__widget-info__level-right {
-    float: right;
-    width: 50px;
-    text-align: right
-}
-
-.real-time-btn {
-    background: #3bb941;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700
-}
-
-.real-time-btn__wrapper {
-    text-align: center;
-    padding: 14px 0 10px
-}
-
-.real-time.rt__order {
-    min-width: 260px;
-    bottom: 58%
-}
-
-.real-time.rt__feedback {
-    bottom: 35%
-}
-
-.real-time.rt__feedback .real-time__widget-ava {
-    margin-top: 8px
-}
-
-.real-time.rt__top-writer {
-    bottom: 80%
-}
-
-.real-time.rt__delivered {
-    min-width: 260px;
-    bottom: 58%;
-    right: 10px;
-    left: inherit
-}
-
-.real-time.rt__delivered .real-time__widget-info {
-    margin: 8px 0 0
-}
-
-.real-time.rt__chat {
-    right: 10px;
-    left: inherit
-}
-
-body::-webkit-scrollbar {
-    width: 6px;
-    height: 6px
-}
-
-body::-webkit-scrollbar-track {
-    background: #222
-}
-
-body::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, .5);
-    background: #FED18C
-}
-
-#of-popup-container .of-special-offer-container input[type=email].of-offer-email {
-    width: 56% !important;
-    font-family: Helvetica !important;
-    font-size: 16px !important;
-    font-weight: 400 !important;
-    line-height: 52.21px !important;
-    letter-spacing: .16px !important;
-    float: left !important;
-    font-style: normal !important;
-    margin-top: 345px !important;
-    margin-left: 40px !important;
-    height: 49px !important
-}
-
-#of-popup-container .of-special-offer-container .of-offer-btn {
-    padding: 9px 46px !important;
-    margin: 345px 0 20px 6px !important;
-    display: inline-block !important;
-    height: 49px !important;
-    float: left !important;
-    -webkit-box-shadow: 0 3px 7px rgba(230, 153, 139, .95) !important;
-    box-shadow: 0 3px 7px rgba(230, 153, 139, .95) !important;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f05c42), to(#d02d10)) !important;
-    background-image: -webkit-linear-gradient(bottom, #f05c42 0, #d02d10 100%) !important;
-    background-image: -moz-linear-gradient(bottom, #f05c42 0, #d02d10 100%) !important;
-    background-image: -o-linear-gradient(bottom, #f05c42 0, #d02d10 100%) !important;
-    background-image: linear-gradient(to top, #f05c42 0, #d02d10 100%) !important;
-    font-family: Helvetica !important;
-    font-size: 16px !important;
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
-    letter-spacing: .16px !important
-}
-
-#of-popup-container .of-special-offer-popup,
-#of-popup-container .of-thank-you-popup {
-    background-position-x: 50% !important
-}
-
-#of-popup-container .of-special-offer-popup .of-close-btn:before,
-#of-popup-container .of-thank-you-popup .of-close-btn:before {
-    height: 0 !important
-}
-
-#of-popup-container .of-special-offer-popup .of-close-btn:after,
-#of-popup-container .of-thank-you-popup .of-close-btn:after {
-    height: 0 !important
-}
-
-#of-popup-container .of-special-offer-popup {
-    height: 510px !important;
-    max-height: 510px !important
-}
-
-#of-popup-container .of-special-offer-container .of-offer-btn .of-offer-btn-text {
-    font-family: Helvetica !important
-}
-
-#of-popup-container .of-special-offer-popup .of-close-btn,
-#of-popup-container .of-thank-you-popup .of-close-btn {
-    border: none !important;
-    background: url(/wp-content/themes/grademiners-ux/img/icon-close.png) no-repeat !important;
-    top: 12px !important;
-    right: 9px !important
-}
-
-.of-thank-you-popup {
-    height: 268px !important;
-    max-height: 268px !important
 }
 
 @font-face {
