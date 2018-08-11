@@ -2297,12 +2297,7 @@ button.content_accordion.active:after {
 
 .content-front .article-info-wrapp .article-info-block-icon {
     position: absolute;
-    top: -20px;
-    left: 0;
-    background-color: #fff;
-    -webkit-border-radius: 13px;
-    border-radius: 13px;
-    padding: 15px 30px 0
+
 }
 
 .content-front .article-info-wrapp .article-info-block-lines {
