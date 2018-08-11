@@ -2404,6 +2404,10 @@ button.content_accordion.active:after {
     display: none;
 }
 
+.top_scroller>img {
+    width: 50px;
+}
+
 .button_text {
     display: inline-block;
     max-width: 80%;
