@@ -36,6 +36,8 @@
 
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/navigation.js"></script>
     <script type="text/javascript" src="js/typewriter.js"></script>
     <!-- End Trustbox script -->
 </head>
@@ -45,43 +47,29 @@
     <header class="header header-fixed header-transparent" id="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-md-6 col-sm-6 col-xs-3">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-3">
-                            <div class="header__logo">
-                                <a href="https://grademiners.com" id="header_logo">
-                                    <img src="/wp-content/themes/grademiners-ux/img/logo-small.svg" alt="Grademiners.com" class="header__logo-small" />
-                                    <img src="img/logo.png" alt="Grademiners.com" class="header__logo-big" />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-9 header__phone-col">
-                            <div class="header__phone">
-                                <i class="i-flag i-flag-us"></i>
-                                <img src="/wp-content/themes/grademiners-ux/img/phone.svg" alt="" class="header__phone-img">
-                                <img src="/wp-content/themes/grademiners-ux/reviews-page/images/24-7.png" alt="" onclick="openMia(); ga('send', 'event','Zopim Livechat', 'Button Clicked', 'Online Support')"
-                                    class="header__phone-toll-free" />
-                            </div>
-                        </div>
+                <div class="col-lg-3 col-md-2 col-sm-6 col-xs-3">
+                    <div class="header__logo">
+                        <a href="https://grademiners.com" id="header_logo">
+                            <img src="/wp-content/themes/grademiners-ux/img/logo-small.svg" alt="Grademiners.com" class="header__logo-small" />
+                            <img src="img/logo.png" alt="Grademiners.com" class="header__logo-big logo" />
+                        </a>
                     </div>
                 </div>
 
-
-                <div class="col-lg-7 col-md-6 col-sm-6 col-xs-9 nav-col">
+                <div class="col-lg-9 col-md-10 col-sm-6 col-xs-9 nav-col">
 
                     <div class="row">
                         <div class="col-md-6 col-lg-8">
                             <nav class="nav" id="nav">
                                 <ul id="menu-navigation" class="menu">
                                     <li id="menu-item-1536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1536">
-                                        <a href="https://grademiners.com/about" itemprop="url">About us</a>
+                                        <a href="#learn-more-cards" itemprop="url">Learn more</a>
                                     </li>
                                     <li id="menu-item-1535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1535">
-                                        <a href="https://grademiners.com/prices" itemprop="url">Prices</a>
+                                        <a href="#faq-section" itemprop="url">FAQs</a>
                                     </li>
                                     <li id="menu-item-1537" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1537">
-                                        <a href="https://grademiners.com/guarantees" itemprop="url">Guarantees</a>
+                                        <a href="#how-it-works" itemprop="url">How it works</a>
                                     </li>
                                     <li id="menu-item-1534" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1534">
                                         <a href="https://grademiners.com/partners" itemprop="url">Earn $50</a>
@@ -96,7 +84,7 @@
                             <div class="mobile-nav" id="mobile_nav"></div>
                             <ul class="header__buttons">
                                 <li>
-                                    <a href="/order" id="order_btn_header">Order</a>
+                                    <a href="post-order.php" id="order_btn_header">Order</a>
                                 </li>
                                 <li>
                                     <div data-crm-widget="loginTooltip"></div>
@@ -126,7 +114,7 @@
         <section id="content_block" class="content-front">
             <div class="container">
                 <article id="post-84" class="article post-84 page type-page status-publish hentry">
-                    <div class="section-title-wrap">
+                    <div class="section-title-wrap" id="faq-section">
                         <h2 class="section-title">Frequently asked questions</h2>
                         <p class="section-subtitle">Whether you struggle to write an essay, coursework, research paper, annotated bibliography or dissertation,
                             we’ll connect you with a screened academic writer for effective writing assistance. Grademiners
@@ -137,9 +125,6 @@
 
                     <div class="article-info-wrapp">
                         <div class="article-info-block">
-                            <div class="article-info-block-icon">
-                                <img src="/wp-content/themes/grademiners-ux/img/article/search-result.png" alt="" />
-                            </div>
                             <h2 class="article-info-block-title">Who Are We and What Services Do We Offer?</h2>
                             <p>Research paper web is a US-based agency that offers all kinds of academic writing services. We
                                 have been in this business for close to ten years now and our experience has only gotten
@@ -153,9 +138,7 @@
                         </div>
 
                         <div class="article-info-block">
-                            <div class="article-info-block-icon">
-                                <img src="/wp-content/themes/grademiners-ux/img/article/glasses.png" alt="" />
-                            </div>
+                        
                             <h2 class="article-info-block-title">How Do I Register?</h2>
                             <p>The registration process is encompassed with the ordering process. To have an account with us,
                                 you have to place an order. We do this to protect our clients from spammers who just create
@@ -165,9 +148,7 @@
                             <div class="article-info-block-lines"></div>
                         </div>
                         <div class="article-info-block">
-                            <div class="article-info-block-icon">
-                                <img src="/wp-content/themes/grademiners-ux/img/article/cup.png" alt="" />
-                            </div>
+                         
                             <h2 class="article-info-block-title">How Long Before My Order is Assigned to a Writer?</h2>
                             <p>We do our best to review each order and have it assigned to the most qualified writer within
                                 the shortest time possible. This will enable you to monitor the progress of your order by
@@ -181,9 +162,7 @@
                             <div class="article-info-block-lines"></div>
                         </div>
                         <div class="article-info-block">
-                            <div class="article-info-block-icon">
-                                <img src="/wp-content/themes/grademiners-ux/img/article/hat.png" alt="" />
-                            </div>
+                          
                             <h2 class="article-info-block-title">What are the Referencing Styles for the Papers?</h2>
                             <p>This will depend on the referencing style that you choose while placing your order. Our writers
                                 are well conversant with the different formatting styles for academic papers. Styles such
@@ -196,9 +175,7 @@
                             <div class="article-info-block-lines"></div>
                         </div>
                         <div class="article-info-block">
-                            <div class="article-info-block-icon">
-                                <img src="/wp-content/themes/grademiners-ux/img/article/list.png" alt="" />
-                            </div>
+                           
                             <h2 class="article-info-block-title">What If I Am Not Satisfied With the Work That I Get?</h2>
                             <p>
                                 We have a thoroughly comprehensive revision policy that should make you worry-free. Our writers are expected to give papers
@@ -208,9 +185,7 @@
                             <div class="article-info-block-lines"></div>
                         </div>
                         <div class="article-info-block">
-                            <div class="article-info-block-icon">
-                                <img src="/wp-content/themes/grademiners-ux/img/article/list.png" alt="" />
-                            </div>
+                         
                             <h2 class="article-info-block-title">Can I Request for Revision of My Paper?</h2>
                             <p>
                                 A client has an option of selecting a new deadline for a paper they request a revision on. Please select an appropriate deadline
@@ -220,9 +195,7 @@
                             <div class="article-info-block-lines"></div>
                         </div>
                         <div class="article-info-block">
-                            <div class="article-info-block-icon">
-                                <img src="/wp-content/themes/grademiners-ux/img/article/list.png" alt="" />
-                            </div>
+                         
                             <h2 class="article-info-block-title">What About Discounts?</h2>
                             <p>
                                 If you are making your first order with us, you can request for your 10% discount from our support team via the live chat.
@@ -233,9 +206,7 @@
                             <div class="article-info-block-lines"></div>
                         </div>
                         <div class="article-info-block">
-                            <div class="article-info-block-icon">
-                                <img src="/wp-content/themes/grademiners-ux/img/article/list.png" alt="" />
-                            </div>
+                          
                             <h2 class="article-info-block-title">Can I Have a Specific Writer Work for Me?</h2>
                             <p>
                                 If a writer has worked for you before and you liked their work such that you would like them to work on your current order,
@@ -247,9 +218,7 @@
                             <div class="article-info-block-lines"></div>
                         </div>
                         <div class="article-info-block">
-                            <div class="article-info-block-icon">
-                                <img src="/wp-content/themes/grademiners-ux/img/article/list.png" alt="" />
-                            </div>
+                        
                             <h2 class="article-info-block-title">Where Do I Get the Writer ID?</h2>
                             <p>
                                 Check your previous orders done by the same writer and you will find the writer ID there. If you are not able to locate any
@@ -261,9 +230,7 @@
                             <div class="article-info-block-lines"></div>
                         </div>
                         <div class="article-info-block">
-                            <div class="article-info-block-icon">
-                                <img src="/wp-content/themes/grademiners-ux/img/article/list.png" alt="" />
-                            </div>
+                         
                             <h2 class="article-info-block-title">What Are the Digital Copies of Sources Used?</h2>
                             <p>These are the web pages, PDF documents, photos and/or URLs of the sources/references that a writer
                                 uses as reference while working on your order. In rare cases, professors ask that you submit
@@ -280,9 +247,6 @@
                             <br /> created by real professionals!</b>
                     </div>
                 </article>
-                <div class="footer-order-btn btn-wrap">
-                    <a href="/order" class="btn btn-default big-btn">Order Now</a>
-                </div>
             </div>
         </section>
 
@@ -417,7 +381,7 @@
             </div>
         </section>
         <!--FREE-FEATURES-->
-        <section class="free-features">
+        <section class="free-features" id="how-it-works">
             <div class="container">
                 <div class="section-title-wrap">
                     <div class="section-title">How Do I Get My Paper Done at Research Paper Web?</div>
@@ -757,7 +721,7 @@
                 </div>
             </div>
         </section>
-      
+
         <div class="real-time rt__order">
             <div class="real-time-container">
                 <div class="close close__real-time__order">
