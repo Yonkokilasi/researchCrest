@@ -200,7 +200,6 @@ li:first-child .wizard-content {
 .wizard_content_login,
 .wizard_content_details,
 .wizard_content_additional_features {
-    background-color: white;
     padding: 1rem;
     display: none;
 }
@@ -221,9 +220,15 @@ li:first-child .wizard-content {
     display: none;
 }
 
+.wizard_content_details select{
+    margin: 0;
+}
+.wizard_content_details label{
+   color: #707070
+}
+
 .active_heading {
-    background: -webkit-linear-gradient(45deg, #3cdcea 0, rgba(102, 200, 136, 0.25) 100%);
-    color: #fff;
+    color: black;
     display: block;
 }
 

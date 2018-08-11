@@ -12,8 +12,7 @@
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/wizard.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/main-order.css" media="screen" />
-    <!--<link rel="stylesheet" href="bootstrap/bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -28,85 +27,80 @@
 
     <div class=" post-order-container">
         <div class="container">
-            <div class="navigation row">
-                <nav class="navbar navbar-expand-lg fixed-top ">
-                    <div class="logo col-md-2">
-                        <a class="navbar-brand" href="#">
-                            <img alt="research-paper-web-logo" src="img/logo.png" />
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2 col-sm-6 col-xs-3">
+                    <div class="header__logo">
+                        <a href="https://grademiners.com" id="header_logo">
+                            <img src="img/logo.png" alt="ResearchPaperCrest.com" class="header__logo-small" />
+                            <img src="img/logo.png" alt="Grademiners.com" class="header__logo-big logo" />
                         </a>
                     </div>
+                </div>
 
-                    <div class="menu col-md-10">
-                        <ul class="topnav navbar-nav " id="myTopnav">
-                            <li class="icon ">
-                                <a class="nav-link" href="javascript:void(0);" onclick="myFunction()">&#9776; Menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="how-it-works.php">HOW IT WORKS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="frequently-asked-questions.php">FAQs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="samples.php">SAMPLES</a>
-                            </li>
-                            <li class="dropdown_holder nav-item">
-                                <a href="#">SERVICES</a>
-                                <ul class="dropdown">
-                                    <?php
-                                        $sql = "SELECT * FROM seo WHERE page_column = 'Column One'";
-                                        $result = mysqli_query($Con, $sql);
-                                        while ($row = mysqli_fetch_assoc($result)) {
-                                            $url = $row['url'];
-                                            $url_name = $row['url_name'];
-                                            ?>
-                                        <li>
-                                            <a href="<?php echo $url; ?>">
-                                                <?php echo $url_name; ?>
-                                            </a>
-                                        </li>
-                                        <?php	
-                                        }
-                                        ?>
+                <div class="col-lg-9 col-md-10 col-sm-6 col-xs-9 nav-col">
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-8">
+                            <nav class="nav" id="nav">
+                                <ul id="menu-navigation" class="menu">
+                                    <li id="menu-item-1536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1536">
+                                        <a href="#learn-more-cards" itemprop="url">Learn more</a>
+                                    </li>
+                                    <li id="menu-item-1535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1535">
+                                        <a href="#faq-section" itemprop="url">FAQs</a>
+                                    </li>
+                                    <li id="menu-item-1537" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1537">
+                                        <a href="#how-it-works" itemprop="url">How it works</a>
+                                    </li>
+                                    <li id="menu-item-1534" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1534">
+                                        <a href="https://grademiners.com/partners" itemprop="url">Samples</a>
+                                    </li>
+                                    <li id="menu-item-5676" class="nav-reviews menu-item menu-item-type-post_type menu-item-object-page menu-item-5676">
+                                        <a href="https://grademiners.com/reviews" itemprop="url">Reviews</a>
+                                    </li>
                                 </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="blog.php">BLOG</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="post-order.php" style="color: #fff;" class="special_link" rel="nofollow">
-                                    <i class="fa fa-shopping-cart"></i> ORDER</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="login.php" style="color: #fff;" class="special_link">
-                                    <i class="fa fa-lock"></i> LOG IN</a>
-                            </li>
-                        </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-6 col-lg-4 buttons-col">
+                            <div class="mobile-nav" id="mobile_nav"></div>
+                            <ul class="header__buttons">
+                                <li>
+                                    <a href="post-order.php" id="order_btn_header" class="order-nav-btn">Order</a>
+                                </li>
+                                <li>
+                                    <div data-crm-widget="loginTooltip"></div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </nav>
+
+
+                </div>
             </div>
+        </div>
 
             <div class="row post_order_content">
-                <div id="top" class="order_wrapper col-md-8">
+                <div id="top" class="order_wrapper col-md-8 calculator_wrapper">
                     <?php
-                        if (isset($_SESSION["info"])) {
-                            $info = $_SESSION["info"];
-                            echo "
+                    if (isset($_SESSION["info"])) {
+                        $info = $_SESSION["info"];
+                        echo "
                                     <div class='alert alert-success'>
                                         $info
                                     </div>
                             ";
-                            unset($_SESSION["info"]);
-                        } elseif (isset($_SESSION["err"])) {
-                            $err = $_SESSION["err"];
-                            echo "
+                        unset($_SESSION["info"]);
+                    } elseif (isset($_SESSION["err"])) {
+                        $err = $_SESSION["err"];
+                        echo "
                                     <div class='alert alert-danger'>
                                         $err
                                     </div>
                             ";
-                            unset($_SESSION["err"]);
-                        }
-                        ?>
+                        unset($_SESSION["err"]);
+                    }
+                    ?>
 
                         <ul class="paper_info">
 
@@ -119,8 +113,8 @@
                                 </div>
 
                                 <form method="POST" action="php/post_order.php" id="order" name="order">
-                                    <div class="wizard_content_details">
-                                        <div class="form-group ">
+                                    <div class="wizard_content_details form-row">
+                                        <div class="form-group  col-md-6">
                                             <label for="paperSubject" class=""> Paper Subject</label>
                                             <select name="paperSubject" id="paperSubject" onclick="randomString();" class="form-control" required>
                                                 <optgroup label="Arts & Humanities">
@@ -192,17 +186,17 @@
                                             </select>
                                         </div>
 
-                                        <div class="form-group">
+                                        <div class="form-group col-md-6">
                                             <label for="paperTopic">Paper Topic</label>
-                                            <input type="text" id="paperTopic" name="paperTopic" value="Writer's Choice" class=" form-control">
+                                            <input type="text" id="paperTopic" name="paperTopic" value="Writer's Choice" class="form-control">
                                         </div>
 
-                                        <div class="form-group">
+                                        <div class="form-group col-md-4">
                                             <label>Number of sources</label>
                                             <input type="text" id="sources" name="sources" placeholder="0" class="form-control" maxlength="2">
                                         </div>
 
-                                        <div class="form-group">
+                                        <div class="form-group col-md-8">
                                             <label> Paper format: </label>
                                             <div class="form-check form-check-inline">
                                                 <input type="radio" name="format" id="format" value="MLA" checked="checked" class="form-check-input">
@@ -572,77 +566,78 @@
                             <img src="img/top-scroller.png" alt="scroll-to-top">
                             </span>
                         </a>
+                        </div>
+                </div>
+                <!--Start of Responsive navigation script -->
 
-                        <!--Start of Responsive navigation script -->
+                <script type="text/javascript">
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
+                <!-- End of responsive navigation -->
 
-                        <script type="text/javascript">
-                            function myFunction() {
-                                var x = document.getElementById("myTopnav");
-                                if (x.className === "topnav") {
-                                    x.className += " responsive";
-                                } else {
-                                    x.className = "topnav";
-                                }
-                            }
-                        </script>
-                        <!-- End of responsive navigation -->
+                <!--Smooth Scroller plus hide versus show anchor-->
+                <script type="text/javascript">
+                    jQuery(document).ready(function ($) {
+                        calculator('#pages');
+                        $(".scroll").click(function (event) {
+                            event.preventDefault();
+                            $('html,body').animate({
+                                scrollTop: $(this.hash).offset().top
+                            }, 1000);
+                        });
+                    });
 
-                        <!--Smooth Scroller plus hide versus show anchor-->
-                        <script type="text/javascript">
-                            jQuery(document).ready(function ($) {
-                                calculator('#pages');
-                                $(".scroll").click(function (event) {
-                                    event.preventDefault();
-                                    $('html,body').animate({
-                                        scrollTop: $(this.hash).offset().top
-                                    }, 1000);
-                                });
-                            });
+                    $(window).scroll(function () {
 
-                            $(window).scroll(function () {
+                        if ($(this).scrollTop() > 0) {
+                            $('.top_scroller').fadeIn();
+                        } else {
+                            $('.top_scroller').fadeOut();
+                        }
+                    });
+                </script>
+                <!--End of Smooth Scroller plus hide versus show anchor -->
+                <div id="status2"></div>
+                <!--Start of Tawk.to Script-->
+                <script type="text/javascript">
+                    var Tawk_API = Tawk_API || {},
+                        Tawk_LoadStart = new Date();
+                    (function () {
+                        var s1 = document.createElement("script"),
+                            s0 = document.getElementsByTagName("script")[0];
+                        s1.async = true;
+                        s1.src = 'https://embed.tawk.to/596bbe606edc1c10b034642f/default';
+                        s1.charset = 'UTF-8';
+                        s1.setAttribute('crossorigin', '*');
+                        s0.parentNode.insertBefore(s1, s0);
+                    })();
+                </script>
+                <!--End of Tawk.to Script-->
 
-                                if ($(this).scrollTop() > 0) {
-                                    $('.top_scroller').fadeIn();
-                                } else {
-                                    $('.top_scroller').fadeOut();
-                                }
-                            });
-                        </script>
-                        <!--End of Smooth Scroller plus hide versus show anchor -->
-                        <div id="status2"></div>
-                        <!--Start of Tawk.to Script-->
-                        <script type="text/javascript">
-                            var Tawk_API = Tawk_API || {},
-                                Tawk_LoadStart = new Date();
-                            (function () {
-                                var s1 = document.createElement("script"),
-                                    s0 = document.getElementsByTagName("script")[0];
-                                s1.async = true;
-                                s1.src = 'https://embed.tawk.to/596bbe606edc1c10b034642f/default';
-                                s1.charset = 'UTF-8';
-                                s1.setAttribute('crossorigin', '*');
-                                s0.parentNode.insertBefore(s1, s0);
-                            })();
-                        </script>
-                        <!--End of Tawk.to Script-->
+                <script type="text/javascript">
+                    Tawk_API = Tawk_API || {};
+                    Tawk_API.onStatusChange = function (status) {
+                        if (status === 'online') {
+                            document.getElementById('status2').innerHTML =
+                                '<a href="javascript:void(Tawk_API.toggle())"> <img src="img/online_image.png" class = "fixedbutton"> </a>';
+                        } else if (status === 'away') {
+                            document.getElementById('status2').innerHTML =
+                                '<a href="javascript:void(Tawk_API.toggle())"> <img src="img/offline_image.png" class = "fixedbutton"> </a>';
+                        } else if (status === 'offline') {
+                            document.getElementById('status2').innerHTML =
+                                '<a href="javascript:void(Tawk_API.toggle())"> <img src="img/offline_image.png" class = "fixedbutton"> </a>';
+                        }
+                    };
+                </script>
 
-                        <script type="text/javascript">
-                            Tawk_API = Tawk_API || {};
-                            Tawk_API.onStatusChange = function (status) {
-                                if (status === 'online') {
-                                    document.getElementById('status2').innerHTML =
-                                        '<a href="javascript:void(Tawk_API.toggle())"> <img src="img/online_image.png" class = "fixedbutton"> </a>';
-                                } else if (status === 'away') {
-                                    document.getElementById('status2').innerHTML =
-                                        '<a href="javascript:void(Tawk_API.toggle())"> <img src="img/offline_image.png" class = "fixedbutton"> </a>';
-                                } else if (status === 'offline') {
-                                    document.getElementById('status2').innerHTML =
-                                        '<a href="javascript:void(Tawk_API.toggle())"> <img src="img/offline_image.png" class = "fixedbutton"> </a>';
-                                }
-                            };
-                        </script>
-
-                        <!--End of tawk.to Status Code -->
+                <!--End of tawk.to Status Code -->
 </body>
 
 </html>
