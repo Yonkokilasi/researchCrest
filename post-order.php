@@ -17,7 +17,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="js/navigation.js"></script>
-    <script src="js/smooth-scroll.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/scripts2.js"></script>
     <div id="status2"></div>
@@ -81,7 +80,7 @@
         </div>
 
             <div class="row post_order_content">
-                <div id="top" class="order_wrapper col-md-8 calculator_wrapper">
+                <div id="top" class="order_wrapper col-md-8">
                     <?php
                     if (isset($_SESSION["info"])) {
                         $info = $_SESSION["info"];
@@ -102,7 +101,7 @@
                     }
                     ?>
 
-                        <ul class="paper_info">
+                        <ul class="paper_info calculator_wrapper">
 
                             <li class="active">
                                 <div class="wizard_heading_details active_heading">
@@ -188,15 +187,15 @@
 
                                         <div class="form-group col-md-6">
                                             <label for="paperTopic">Paper Topic</label>
-                                            <input type="text" id="paperTopic" name="paperTopic" value="Writer's Choice" class="form-control">
+                                            <input type="text" id="paperTopic" name="paperTopic" placeholder="Writer's Choice" class="form-control">
                                         </div>
 
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group">
                                             <label>Number of sources</label>
                                             <input type="text" id="sources" name="sources" placeholder="0" class="form-control" maxlength="2">
                                         </div>
 
-                                        <div class="form-group col-md-8">
+                                        <div class="form-group">
                                             <label> Paper format: </label>
                                             <div class="form-check form-check-inline">
                                                 <input type="radio" name="format" id="format" value="MLA" checked="checked" class="form-check-input">
@@ -256,7 +255,7 @@
                                         <tr>
                                             <td>Pages</td>
                                             <td>
-                                                <input name="pages" id="pages" class="form-control" onchange="calculator('#pages')" type="number" placeholder="5 pages">
+                                                <input name="pages" id="pages" class="form-control" onchange="calculator('#pages')" type="number" placeholder="5 pages"pattern="\d*" maxlength="4">
                                             </td>
                                         </tr>
                                         <tr>

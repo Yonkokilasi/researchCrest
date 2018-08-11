@@ -1580,6 +1580,13 @@ h4.card-title {
     color: #707070;
 }
 
+.form-group button.next-details {
+        margin-top: 2px;
+        margin-right: 2rem;
+        width: 5rem;
+        background-color: white;
+}
+
 .card-btn {
     font-size: 14px;
 }
