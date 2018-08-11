@@ -2197,3 +2197,152 @@ button.content_accordion.active:after {
         width: 94%
     }
 }
+
+.content-front {
+    padding-top: 20px;
+    background-color: #f5f5f5;
+    color: #000
+}
+
+.content-front .article {
+    background-image: url(../img/think-man.png);
+    background-repeat: no-repeat;
+    background-position: 97% 250px
+}
+
+@media (max-width:1199px) {
+    .content-front .article {
+        background-image: none
+    }
+}
+
+@media (min-width:1200px) {
+    .content-front .section-title {
+        max-width: 800px;
+        margin: 1em auto
+    }
+}
+
+.content-front p.section-subtitle {
+    font-size: 14px;
+    text-align: center;
+    color: #000
+}
+
+@media (min-width:768px) {
+    .content-front p.section-subtitle {
+        font-size: 15px
+    }
+}
+
+@media (min-width:1200px) {
+    .content-front .article-btn,
+    .content-front .article-list {
+        max-width: 620px
+    }
+}
+
+.content-front .article-info-wrapp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 80px
+}
+
+@media (max-width:991px) {
+    .content-front .article-info-wrapp {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+}
+
+.content-front .article-info-wrapp .article-info-block {
+    margin-bottom: 60px;
+    background-color: #fff;
+    -webkit-border-radius: 13px 13px 0 0;
+    border-radius: 13px 13px 0 0;
+    padding: 50px 30px 0;
+    position: relative
+}
+
+@media (min-width:992px) {
+    .content-front .article-info-wrapp .article-info-block {
+        max-width: 49%;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 49%;
+        -moz-box-flex: 0;
+        -ms-flex: 0 1 49%;
+        flex: 0 1 49%
+    }
+}
+
+.content-front .article-info-wrapp .article-info-block p {
+    margin-bottom: 0
+}
+
+.content-front .article-info-wrapp .article-info-block-icon {
+    position: absolute;
+
+}
+
+.content-front .article-info-wrapp .article-info-block-lines {
+    margin-top: 20px
+}
+
+.content-front .article-info-wrapp .article-info-block-lines:after,
+.content-front .article-info-wrapp .article-info-block-lines:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: -10px;
+    height: 10px;
+    width: 50%;
+    background: #3f3f41
+}
+
+.content-front .article-info-wrapp .article-info-block-lines:before {
+    left: 0;
+    background: #FED18C;
+    -webkit-border-radius: 0 0 0 15px;
+    border-radius: 0 0 0 15px
+}
+
+.content-front .article-info-wrapp .article-info-block-lines:after {
+    right: 0;
+    background: #D6EFFF;
+    -webkit-border-radius: 0 0 15px 0;
+    border-radius: 0 0 15px 0
+}
+
+.content-front .article-info-wrapp .article-info-block-title {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 25px
+}
+
+.content-front .article-get-text {
+    font-size: 40px
+}
+
+.content-front .article-info-block,
+.content-front::-webkit-:not(:root:root) {
+    display: inline-block;
+    width: 48%;
+    margin: 0 10px
+}
