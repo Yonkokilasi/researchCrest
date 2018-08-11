@@ -2297,7 +2297,6 @@ button.content_accordion.active:after {
 
 .content-front .article-info-wrapp .article-info-block-icon {
     position: absolute;
-
 }
 
 .content-front .article-info-wrapp .article-info-block-lines {
@@ -2345,4 +2344,226 @@ button.content_accordion.active:after {
     display: inline-block;
     width: 48%;
     margin: 0 10px
+}
+
+.footer-section {
+    background-image: url(../img/coffee-laptop-blur.jpg);
+    background-size: cover;
+    font-size: 100%;
+    padding: 0rem 1rem 3rem 1rem;
+    text-align: center;
+    color: #fff;
+    font-family: "OpenSans-Regular";
+}
+
+.footer_links {
+    padding: 2rem;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Ubuntu";
+}
+
+.footer_links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0;
+    margin: 1rem 1rem 0rem 1rem;
+    display: inline-block;
+    position: relative;
+    line-height: 2;
+}
+
+.footer_links a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: solid .2rem #D6EFFF;
+    transition: .5s;
+}
+
+.footer_links a:hover:after {
+    width: 100%;
+}
+
+.copyright {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Ubuntu";
+}
+
+.top_scroller {
+    position: fixed;
+    bottom: 10px;
+    right: 13px;
+    display: none;
+}
+
+.button_text {
+    display: inline-block;
+    max-width: 80%;
+    float: left;
+    vertical-align: middle;
+}
+
+.fixedbutton {
+    position: fixed;
+    bottom: 35%;
+    left: 0px;
+    z-index: 2;
+    width: 36px;
+}
+
+.phone_holder {
+    display: inline-block;
+    border-radius: 2rem;
+    border: 1px solid #bdbdbd;
+    padding: .2rem 1rem;
+    vertical-align: middle;
+    float: left;
+    margin: .3rem 1rem;
+    color: #0075a3;
+    font-weight: bold;
+    font-family: 'Ubuntu-l';
+}
+
+.social_links {
+    padding: 3rem;
+}
+
+.social_links a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0;
+    margin: -1rem 1rem 1rem 1rem;
+    ;
+    display: inline-block;
+    position: relative;
+    line-height: 2;
+}
+
+.social_links a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: solid .2rem #D6EFFF;
+    transition: .2s;
+}
+
+.social_links a:hover:after {
+    width: 100%;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media screen and (max-width: 480px) {
+    select {
+        float: none;
+    }
+    label {
+        display: block;
+    }
+    hr {
+        width: 80%;
+    }
+    .calculator {
+        padding: 2rem 0;
+        margin: 0;
+    }
+    .calc_order {
+        display: block;
+        margin: 2rem;
+    }
+    header {
+        padding: 20px;
+        position: relative;
+    }
+    h2 {
+        padding: 0rem 1rem;
+        font-size: 1.6rem;
+    }
+    .subholder {
+        margin: 2rem 0rem;
+    }
+    h3 {
+        font-size: 1em !important;
+    }
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items. Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width:680px) {
+    ul.topnav li {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+    ul.topnav.responsive {
+        position: relative;
+        float: right;
+    }
+    ul.topnav.responsive li.icon {
+        padding: 0;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    ul.topnav.responsive li.dropdown_holder {
+        display: none;
+    }
+    .iconic {
+        min-width: 96%;
+    }
+    .prev,
+    .next {
+        font-size: 3rem;
+    }
+    .prev {
+        position: absolute;
+        left: 0;
+    }
+    .next {
+        position: absolute;
+        right: 0;
+    }
+    .contents_container {
+        margin-left: 2rem;
+    }
+    .contents_container_heading {
+        margin-bottom: 3rem;
+    }
+    .cards-wrapper .card {
+        height: 400px;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (max-width: 768px) {
+    ul.topnav li {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
 }
