@@ -513,35 +513,6 @@ h2 {
     }
 }
 
-.header__phone {
-    display: none;
-    margin-top: 16px;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-    float: right;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 0;
-    background: #4a4a4a;
-    border: 3px solid #4a4a4a
-}
-
-.header__phone .i-flag {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-border-radius: 100%;
-    border-radius: 100%;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    -o-background-size: contain;
-    background-size: contain;
-    width: 36px;
-    height: 34px;
-    margin: 0
-}
-
-
 .header__phone-img {
     margin: 0 6px
 }
@@ -697,6 +668,68 @@ h2 {
     vertical-align: middle
 }
 
+.header__buttons #of-widgets-login-tooltip a.of-widgets-open-tooltip,
+.header__buttons a[href*="/customers/login"],
+.header__buttons a[href*="/order"] {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 6px 10px 5px;
+    font: 400 12px/1 Poppins, sans-serif;
+    border: 1px solid #fff;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    -moz-transition: .25s;
+    transition: .25s
+}
+
+.header__buttons #of-widgets-login-tooltip a.of-widgets-open-tooltip:active,
+.header__buttons #of-widgets-login-tooltip a.of-widgets-open-tooltip:focus,
+.header__buttons #of-widgets-login-tooltip a.of-widgets-open-tooltip:hover,
+.header__buttons a[href*="/customers/login"]:active,
+.header__buttons a[href*="/customers/login"]:focus,
+.header__buttons a[href*="/customers/login"]:hover,
+.header__buttons a[href*="/order"]:active,
+.header__buttons a[href*="/order"]:focus,
+.header__buttons a[href*="/order"]:hover {
+    color: #fff;
+    border-color: orange;
+    background: orange;
+    text-decoration: none
+}
+
+@media (min-width:468px) {
+    .header__buttons #of-widgets-login-tooltip a.of-widgets-open-tooltip,
+    .header__buttons a[href*="/customers/login"],
+    .header__buttons a[href*="/order"] {
+        padding: 12px 19px 12px;
+        font-size: 12px;
+        border-width: 2px
+    }
+}
+
+.header__buttons a[href*="/order"] {
+    margin-right: 4px;
+    border-color: #ffba00;
+    color: orange
+}
+
+@media (min-width:468px) {
+    .header__buttons {
+        margin: 15px 0 0 0
+    }
+}
+
+@media (min-width:1200px) {
+    .header__buttons {
+        margin: 1px 0 5px 0
+    }
+}
+
 .header__buttons a[href*="/order"] {
     display: inline-block;
     vertical-align: middle;
@@ -718,7 +751,7 @@ h2 {
     }
 }
 
-.header__buttons a[href*="/order"] {
+.header__buttons .order-nav-btn {
     margin-right: 4px;
     border-color: #ffba00;
     color: #FED18C
@@ -2104,8 +2137,9 @@ button.content_accordion.active:after {
     right: 13px;
     display: none;
 }
-@media(max-width:600px){
-    .top_scroller{
+
+@media(max-width:600px) {
+    .top_scroller {
         display: none !important;
     }
 }
