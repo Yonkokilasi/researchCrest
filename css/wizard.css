@@ -57,7 +57,7 @@
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    color: #FF6F59;
+    color: white;
     width: 100px;
     border-radius: 2rem;
     display: inline;
@@ -276,7 +276,15 @@ li:first-child .wizard-content {
     float: right;
     cursor: pointer;
 }
-
+.floating-right-btn{
+    float: right;
+    margin-top: 0;
+}
+.order-instructions-subtext{
+    font-size: 18px;
+    color: black;
+    margin-top:2rem;
+}
 .next-instructions {
     float: right;
     cursor: pointer;

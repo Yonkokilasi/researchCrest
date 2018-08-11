@@ -10,6 +10,7 @@ $(document).ready(function () {
         // Hide paper details section
         $('.wizard_heading_details').removeClass('active_heading').addClass('clickable_heading details_clickable');
         $('.wizard_content_details').hide();
+        $('.wizard_heading_details').hide();
 
         // Show paper content section
         $('.wizard_content_instructions').show(1000);
@@ -21,6 +22,7 @@ $(document).ready(function () {
         // Hide instructions section
         $('.wizard_heading_instructions').removeClass('active_heading').addClass('clickable_heading');
         $('.wizard_content_instructions').hide();
+        $('.wizard_heading_instructions').hide();
 
         // Show calculator section
         $('.wizard_content_calculator').show(1000);
@@ -32,22 +34,23 @@ $(document).ready(function () {
 
         // Hide Calculations section
         $('.wizard_content_calculator').hide();
+        $('.wizard_heading_calculator').hide();
         $('.wizard_heading_calculator').removeClass('active_heading').addClass('clickable_heading');
 
         // Show additional feature section
         $('.wizard_content_additional_features').show(1000);
         $('.wizard_heading_additional_features').addClass('active_heading');
 
+        
+    });
+    
+    // Continue is clicked on additional features section
+    $('#next-add').click(function () {
         //Show all other headings
         $('.wizard_heading_details').show();
         $('.wizard_heading_instructions').show();
         $('.wizard_heading_calculator').show();
         $('.wizard_heading_additional_features').show();
-
-    });
-
-    // Continue is clicked on additional features section
-    $('#next-add').click(function () {
         // Hide Additional  features section
         $('.wizard_content_additional_features').hide();
         $('.wizard_heading_additional_features').removeClass('active_heading').addClass('clickable_heading clickable');

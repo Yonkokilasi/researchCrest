@@ -810,6 +810,8 @@ h2 {
 
 .why-choose-us-text {
     color: #D6EFFF;
+    font-size: 19px;
+    
 }
 
 .top-block__title {
@@ -858,7 +860,8 @@ h2 {
 .top-block__list-title span {
     display: block;
     position: relative;
-    top: -10px
+    top: -10px;
+    font-size: 25px;
 }
 
 .top-block__list-title:after,
@@ -914,7 +917,8 @@ h2 {
 .top-block__list-item .colored-text {
     display: block;
     margin-bottom: 3px;
-    font-weight: 700
+    font-weight: 700;
+    font-size: 22px;
 }
 
 @media (min-width:768px) {
@@ -1157,7 +1161,7 @@ h2 {
 }
 
 .calculator_wrapper {
-    background-color: #FED18C;
+    background-color: #FFBA00;
     -webkit-border-radius: 20px;
     border-radius: 20px;
 }
@@ -1576,18 +1580,26 @@ h4.card-title {
 .green_btn {
     background-color: #D6EFFF;
     border-color: #FEFEFF;
-    margin-top: 15px;
     color: #707070;
 }
 
+.form-group button.next-details,
+.wizard_content_instructions .floating-right-btn {
+    margin-right: 2rem;
+    width: 5rem;
+    background-color: white;
+}
+
+.floating-right-btn {
+    margin-top: 0;
+}
+
 .form-group button.next-details {
-        margin-top: 2px;
-        margin-right: 2rem;
-        width: 5rem;
-        background-color: white;
+    margin-top: 2px;
 }
 
 .card-btn {
+    margin-top: 15px;
     font-size: 14px;
 }
 

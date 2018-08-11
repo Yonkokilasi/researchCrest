@@ -225,9 +225,9 @@
                                 <div class="wizard_content_instructions">
                                     <center>
                                         <textarea name="instructions" id="instructions" class="form-control" style="height: 200px; width: 95%; padding: .5rem; border-radius: .4rem; border: solid 1px #bdbdbd;"
-                                            placeholder="Order instructions..."></textarea>
+                                            placeholder="Order instructions go here..."></textarea>
                                     </center>
-                                    <p style="font-weight: 900;color: #1895d8;">
+                                    <p class="order-instructions-subtext">
                                         You will be able to upload files after order submission
                                         <button id="next-instructions" type="button" class="btn floating-right-btn  green_btn">Next </button>
                                     </p>
@@ -350,7 +350,7 @@
                                 </div>
 
                                 <div class="wizard_content_additional_features">
-                                    <div style="width: 100%; background-color: #FFCDD2; padding: .5rem;">
+                                    <div style="width: 100%; padding: .5rem;">
                                         Additional charges will be incurred for some of these features
                                     </div>
                                     <table width="80%">
