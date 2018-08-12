@@ -2096,7 +2096,7 @@ button.content_accordion.active:after {
         margin-bottom: 3rem;
     }
     .cards-wrapper .card {
-        height: 400px;
+        height: auto;
         margin-bottom: 4rem;
     }
 }
@@ -2162,6 +2162,7 @@ button.content_accordion.active:after {
 }
 
 @media(max-width:1024px) {
+
     .page_wrapper {
         margin-top: 0;
     }
@@ -2221,6 +2222,14 @@ button.content_accordion.active:after {
     }
     .display_cost {
         margin-left: 0;
+    }
+    .card-header {
+        height: auto;
+    }
+    .card-body:hover,
+    .card .card-body:hover .to-show {
+        font-size: 13px;
+        padding-top: 2rem;
     }
 }
 
