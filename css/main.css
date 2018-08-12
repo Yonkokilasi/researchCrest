@@ -448,6 +448,20 @@ h2 {
     left: 290px;
 }
 
+@media(max-width:420px) {
+    .slicknav_menu {
+        top: 50px;
+        left: 340px;
+    }
+}
+
+@media(max-width:380px) {
+    .slicknav_menu {
+        top: 50px;
+        left: 290px;
+    }
+}
+
 .slicknav_open .slicknav_icon-bar {
     background: #fff
 }
