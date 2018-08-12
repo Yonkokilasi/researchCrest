@@ -1,11 +1,11 @@
 html {
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
-      margin-top: 0 !important
+    -webkit-text-size-adjust: 100% margin-top: 0 !important
 }
+
 body,
 html {
-    font: 400 15px/1.33 ;
+    font: 400 15px/1.33;
 }
 
 body {
@@ -61,7 +61,9 @@ h4 {
     font-family: 'Rubik', sans-serif !important;
 }
 
-p ,body,select{
+p,
+body,
+select {
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -83,7 +85,13 @@ img {
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
-    border-radius: 4px
+    border-radius: 4px;
+}
+.blue-btn{
+    border-width: 2px;
+    background-color: #D6EFFF;
+    border-color: #FED18C;
+
 }
 
 .container:after,
@@ -102,7 +110,6 @@ img {
 @-ms-viewport {
     width: device-width
 }
-
 
 .main {
     -webkit-box-flex: 1;
@@ -502,7 +509,7 @@ h2 {
 }
 
 .calc_order {
-    margin-top: 0;
+    margin-top: 10px;
     border-color: white;
     color: white;
     margin-bottom: 1rem;
@@ -959,6 +966,7 @@ h2 {
     font-size: 2rem;
     color: #495057;
     font-family: 'Rubik', sans-serif';
+
 }
 
 form#calc {
@@ -975,7 +983,7 @@ fieldset {
     border: 1px solid transparent;
     margin: 0;
     font-family: 'Rubik', sans-serif';
-    color: black;
+ color: black;
     text-align: left;
 }
 
@@ -1001,7 +1009,7 @@ select {
     display: inline;
     padding: 1rem;
     font-family: 'Rubik', sans-serif';
-    color: #D6EFFF;
+ color: #D6EFFF;
     font-size: 23px;
 }
 
@@ -1086,7 +1094,7 @@ select {
 .email-collector__field input[type=text],
 .email-collector__field select {
     height: 44px !important;
-    font: 400 15px/1.33 ;
+    font: 400 15px/1.33;
     border: 0 !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important
@@ -1330,7 +1338,7 @@ select.select-type-of-work {
     overflow-y: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 7;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
 }
 
@@ -2141,10 +2149,13 @@ button.content_accordion.active:after {
     margin-left: 8rem;
 }
 
-@media(min-width:1440px) and (max-width: 1500px){
+@media(min-width:1440px) and (max-width: 1500px) {
     .card-text.to-hide {
         -webkit-line-clamp: 5;
     }
+}
+
+@media(min-width:1440px) {
     .card-body:hover {
         font-size: 15px;
     }
@@ -2177,7 +2188,7 @@ button.content_accordion.active:after {
     .display_cost {
         font-size: 19px;
     }
-    .free-features__title{
+    .free-features__title {
         margin-bottom: 2rem;
     }
 }
