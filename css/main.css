@@ -887,7 +887,7 @@ h2 {
 @media (max-width:1024px) {
     .free-features__item {
         max-width: 400px;
-        min-height: 310px;
+        min-height: 355px;
         margin: 10px auto
     }
 }
@@ -2141,6 +2141,15 @@ button.content_accordion.active:after {
     margin-left: 8rem;
 }
 
+@media(min-width:1440px) and (max-width: 1500px){
+    .card-text.to-hide {
+        -webkit-line-clamp: 5;
+    }
+    .card-body:hover {
+        font-size: 15px;
+    }
+}
+
 @media(max-width:1024px) {
     .page_wrapper {
         margin-top: 0;
@@ -2167,6 +2176,9 @@ button.content_accordion.active:after {
     }
     .display_cost {
         font-size: 19px;
+    }
+    .free-features__title{
+        margin-bottom: 2rem;
     }
 }
 
