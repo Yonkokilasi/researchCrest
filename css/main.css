@@ -1,11 +1,32 @@
 html {
-    font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
+      margin-top: 0 !important
+}
+body,
+html {
+    font: 400 15px/1.33 ;
 }
 
 body {
-    margin: 0
+    margin: 0;
+    background: #fff;
+    color: #707070;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+    min-width: 300px
 }
 
 header,
@@ -24,229 +45,28 @@ b {
 
 h1 {
     font-size: 2em;
-    margin: .67em 0
+    margin: .67em 0;
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+h3 {
+    font-family: 'Oxygen', sans-serif !important;
+}
+
+h4 {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+p ,body,select{
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 img {
     border: 0
-}
-
-button,
-input {
-    color: inherit;
-    font: inherit;
-    margin: 0
-}
-
-button {
-    overflow: visible
-}
-
-button {
-    text-transform: none
-}
-
-button {
-    -webkit-appearance: button
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0
-}
-
-input {
-    line-height: normal
-}
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
-
-:after,
-:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
-
-html {
-    font-size: 10px
-}
-
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #fff
-}
-
-button,
-input {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit
-}
-
-a {
-    color: #337ab7;
-    text-decoration: none
-}
-
-img {
-    vertical-align: middle
-}
-
-h1,
-h2 {
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
-    color: inherit
-}
-
-h1,
-h2 {
-    margin-top: 20px;
-    margin-bottom: 10px
-}
-
-h1 {
-    font-size: 36px
-}
-
-h2 {
-    font-size: 30px
-}
-
-p {
-    margin: 0 0 10px
-}
-
-ol,
-ul {
-    margin-top: 0;
-    margin-bottom: 10px
-}
-
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px
-}
-
-@media (min-width:768px) {
-    .container {
-        width: 750px
-    }
-}
-
-@media (min-width:992px) {
-    .container {
-        width: 970px
-    }
-}
-
-@media (min-width:1200px) {
-    .container {
-        width: 1170px
-    }
-}
-
-.row {
-    margin-left: -15px;
-    margin-right: -15px
-}
-
-.col-lg-4,
-.col-lg-5,
-.col-lg-7,
-.col-lg-8,
-.col-md-5,
-.col-md-6,
-.col-md-7,
-.col-sm-3,
-.col-sm-6,
-.col-sm-9,
-.col-xs-3,
-.col-xs-9 {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px
-}
-
-.col-xs-3,
-.col-xs-9 {
-    float: left
-}
-
-.col-xs-9 {
-    width: 75%
-}
-
-.col-xs-3 {
-    width: 25%
-}
-
-@media (min-width:768px) {
-    .col-sm-3,
-    .col-sm-6,
-    .col-sm-9 {
-        float: left
-    }
-    .col-sm-9 {
-        width: 75%
-    }
-    .col-sm-6 {
-        width: 50%
-    }
-    .col-sm-3 {
-        width: 25%
-    }
-}
-
-@media (min-width:992px) {
-    .col-md-5,
-    .col-md-6,
-    .col-md-7 {
-        float: left
-    }
-    .col-md-7 {
-        width: 58.33333333%
-    }
-    .col-md-6 {
-        width: 50%
-    }
-    .col-md-5 {
-        width: 41.66666667%
-    }
-}
-
-@media (min-width:1200px) {
-    .col-lg-4,
-    .col-lg-5,
-    .col-lg-7,
-    .col-lg-8 {
-        float: left
-    }
-    .col-lg-8 {
-        width: 66.66666667%
-    }
-    .col-lg-7 {
-        width: 58.33333333%
-    }
-    .col-lg-5 {
-        width: 41.66666667%
-    }
-    .col-lg-4 {
-        width: 33.33333333%
-    }
 }
 
 .btn {
@@ -283,65 +103,6 @@ ul {
     width: device-width
 }
 
-@font-face {
-    font-family: Poppins;
-    src: url(/wp-content/themes/grademiners-ux/fonts/poppins/poppins-regular-webfont.woff2) format('woff2'), url(/wp-content/themes/grademiners-ux/fonts/poppins/poppins-regular-webfont.woff) format('woff');
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(/wp-content/themes/grademiners-ux/fonts/poppins/poppins-semibold-webfont.woff2) format('woff2'), url(/wp-content/themes/grademiners-ux/fonts/poppins/poppins-semibold-webfont.woff) format('woff');
-    font-weight: 600;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Poppinsmedium;
-    src: url(/wp-content/themes/grademiners-ux/fonts/poppins/poppins-medium-webfont.eot);
-    src: url(/wp-content/themes/grademiners-ux/fonts/poppins/poppins-medium-webfont.eot?#iefix) format('embedded-opentype'), url(/wp-content/themes/grademiners-ux/fonts/poppins/poppins-medium-webfont.woff2) format('woff2'), url(/wp-content/themes/grademiners-ux/fonts/poppins/poppins-medium-webfont.woff) format('woff'), url(/wp-content/themes/grademiners-ux/fonts/poppins/poppins-medium-webfont.ttf) format('truetype'), url(/wp-content/themes/grademiners-ux/fonts/poppins/poppins-medium-webfont.svg#poppinsmedium) format('svg');
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: fontello;
-    src: url(/wp-content/themes/grademiners-ux/fonts/fontello/fontello.eot);
-    src: url(/wp-content/themes/grademiners-ux/fonts/fontello/fontello.eot?#iefix) format('embedded-opentype'), url(/wp-content/themes/grademiners-ux/fonts/fontello/fontello.woff2) format('woff2'), url(/wp-content/themes/grademiners-ux/fonts/fontello/fontello.woff) format('woff'), url(/wp-content/themes/grademiners-ux/fonts/fontello/fontello.ttf) format('truetype'), url(/wp-content/themes/grademiners-ux/fonts/fontello/fontello.svg?#fontello) format('svg');
-    font-weight: 400;
-    font-style: normal
-}
-
-html {
-    margin-top: 0 !important
-}
-
-body,
-html {
-    font: 400 15px/1.33 Helvetica, "Helvetica Neue", Arial, sans-serif
-}
-
-body {
-    margin: 0;
-    background: #fff;
-    color: #707070;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -moz-box-orient: vertical;
-    -moz-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: 100vh;
-    min-height: 100vh;
-    min-width: 300px
-}
 
 .main {
     -webkit-box-flex: 1;
@@ -368,7 +129,7 @@ a {
 
 h1 {
     margin: 1em 0;
-    font: 600 28px/1.25 Poppins, sans-serif;
+    font: 600 28px/1.25 Roboto Mono, monospace;
     color: #000
 }
 
@@ -380,7 +141,6 @@ h1 {
 
 h2 {
     margin: 1em 0;
-    font: 600 20px/1.25 Poppins, sans-serif;
     color: #000
 }
 
@@ -392,7 +152,7 @@ h2 {
 
 .section-title {
     margin: 1em 0;
-    font: 600 28px/1.25 Poppins, sans-serif;
+    font: 600 28px/1.25 Roboto Mono, monospace;
     color: #000;
     text-align: center
 }
@@ -483,7 +243,7 @@ h2 {
 .header__logo a {
     display: block;
     padding: 11px 0 11px 0;
-    font: 400 14px/1.25 Poppins, sans-serif;
+    font: 400 14px/1.25 Roboto Mono, monospace;
     color: #fff;
     text-decoration: none
 }
@@ -542,6 +302,17 @@ h2 {
 
 .nav {
     display: none
+}
+
+.navbar-brand {
+    color: #fed136;
+}
+
+.navbar-brand.active,
+.navbar-brand:active,
+.navbar-brand:focus,
+.navbar-brand:hover {
+    color: #fec503;
 }
 
 .nav ul {
@@ -650,7 +421,7 @@ h2 {
 
 .nav a {
     display: inline-block;
-    font-family: Poppins, sans-serif;
+    font-family: Quicksand, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff
@@ -674,7 +445,7 @@ h2 {
     display: inline-block;
     vertical-align: middle;
     padding: 6px 10px 5px;
-    font: 400 12px/1 Poppins, sans-serif;
+    font: 400 12px/1 Rubik, sans-serif;
     border: 1px solid #fff;
     -webkit-border-radius: 30px;
     border-radius: 30px;
@@ -747,7 +518,7 @@ h2 {
     display: inline-block;
     vertical-align: middle;
     padding: 6px 10px 5px;
-    font: 400 12px/1 Poppins, sans-serif;
+    font: 400 12px/1 Rubik, sans-serif;
     border: 1px solid #fff;
     -webkit-border-radius: 30px;
     border-radius: 30px;
@@ -808,7 +579,7 @@ h2 {
 }
 
 .top-block h1 {
-    font: 600 30px/1.25 Poppins, sans-serif
+    font: 600 30px/1.25 Roboto Mono, monospace
 }
 
 .top-block__content {
@@ -829,13 +600,13 @@ h2 {
 .top-block__title {
     margin-top: 30px;
     margin-bottom: 30px;
-    font: 600 30px/1.25 Poppins, sans-serif;
+    font: 600 30px/1.25 Roboto Mono, monospace;
     color: #fff
 }
 
 .top-block__subtitle {
     margin-bottom: 20px;
-    font: 400 20px/1.25 Poppins, sans-serif
+    font: 400 20px/1.25 Roboto Mono, monospace
 }
 
 .top-block__counter {
@@ -1054,7 +825,7 @@ h2 {
 }
 
 .free-features__title {
-    font: 600 20px/1 Poppins, sans-serif;
+    font: 600 20px/1 Roboto Mono, monospace;
     text-align: center;
     color: #000
 }
@@ -1187,7 +958,7 @@ h2 {
     display: inline;
     font-size: 2rem;
     color: #495057;
-    font-family: 'Ubuntu';
+    font-family: 'Rubik', sans-serif';
 }
 
 form#calc {
@@ -1203,7 +974,7 @@ form#calc {
 fieldset {
     border: 1px solid transparent;
     margin: 0;
-    font-family: 'Ubuntu';
+    font-family: 'Rubik', sans-serif';
     color: black;
     text-align: left;
 }
@@ -1221,7 +992,6 @@ select {
     margin-bottom: .5rem;
     text-align: center;
     width: 170px;
-    font-family: 'OpenSans-Regular';
     line-height: 1.7;
     margin-right: 1rem;
 }
@@ -1230,7 +1000,7 @@ select {
     text-align: center;
     display: inline;
     padding: 1rem;
-    font-family: 'Ubuntu';
+    font-family: 'Rubik', sans-serif';
     color: #D6EFFF;
     font-size: 23px;
 }
@@ -1276,7 +1046,7 @@ select {
 }
 
 .email-collector__section-title {
-    font: 400 28px/1 Poppins, sans-serif;
+    font: 400 28px/1 Roboto Mono, monospace;
     color: #fff;
     text-align: center;
     padding: 30px 0
@@ -1296,7 +1066,7 @@ select {
 
 .email-collector__widget-title {
     margin-bottom: 20px;
-    font: 400 20px/1 Poppins, sans-serif;
+    font: 400 20px/1 Roboto Mono, monospace;
     color: black;
 }
 
@@ -1316,7 +1086,7 @@ select {
 .email-collector__field input[type=text],
 .email-collector__field select {
     height: 44px !important;
-    font: 400 15px/1.33 Helvetica, "Helvetica Neue", Arial, sans-serif !important;
+    font: 400 15px/1.33 ;
     border: 0 !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important
@@ -1479,14 +1249,6 @@ select.select-type-of-work {
     margin-top: 0;
 }
 
-@font-face {
-    font-family: FontAwesome;
-    src: url(/wp-content/themes/grademiners-ux/fonts/fontawesome-webfont.eot?v=4.7.0);
-    src: url(/wp-content/themes/grademiners-ux/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(/wp-content/themes/grademiners-ux/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(/wp-content/themes/grademiners-ux/fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(/wp-content/themes/grademiners-ux/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(/wp-content/themes/grademiners-ux/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
-    font-weight: 400;
-    font-style: normal
-}
-
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -1642,7 +1404,7 @@ button.content_accordion {
     padding: 24px 10px 24px 24px;
     transition: .4s;
     border-radius: 2rem;
-    font-family: "Ubuntu-L";
+    font-family: "Rubik', sans-serif";
     font-size: 1.4em;
     margin: 10px;
     line-height: 20px;
@@ -2118,14 +1880,14 @@ button.content_accordion.active:after {
     padding: 0rem 1rem 3rem 1rem;
     text-align: center;
     color: #fff;
-    font-family: "OpenSans-Regular";
+    font-family: 'Rubik', sans-serif;
 }
 
 .footer_links {
     padding: 2rem;
     font-size: 17px;
     font-weight: bold;
-    font-family: "Ubuntu";
+    font-family: 'Rubik', sans-serif;
 }
 
 .footer_links a {
@@ -2159,7 +1921,7 @@ button.content_accordion.active:after {
     display: inline-block;
     font-size: 20px;
     font-weight: 600;
-    font-family: "Ubuntu";
+    font-family: 'Rubik', sans-serif;
 }
 
 .top_scroller {
@@ -2204,7 +1966,7 @@ button.content_accordion.active:after {
     margin: .3rem 1rem;
     color: #0075a3;
     font-weight: bold;
-    font-family: 'Ubuntu-l';
+    font-family: 'Rubik', sans-serif;
 }
 
 .social_links {
@@ -2400,10 +2162,10 @@ button.content_accordion.active:after {
     .about-calc {
         margin-left: 7rem;
     }
-    .standard_cost{
-            margin-top: 11px;
+    .standard_cost {
+        margin-top: 11px;
     }
-    .display_cost{
+    .display_cost {
         font-size: 19px;
     }
 }
