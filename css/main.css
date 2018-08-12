@@ -2340,3 +2340,22 @@ button.content_accordion.active:after {
         display: inline-block;
     }
 }
+
+/* About page  */
+
+.page_wrapper{
+    margin-top: 7rem;
+    background-image: url(../img/book-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 23px;
+}
+.about-us-header{
+    text-align: center;
+    font-size: 35px;
+    color:#FED18C;
+}
+.about-calc{
+    margin-left: 8rem;
+}
