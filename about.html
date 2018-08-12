@@ -103,7 +103,7 @@ include("php/connect.php");
         <h2 class="about-us-header">About Us</h2>
         <div class="cont_wrapper container">
             <div class="row">
-                <div class="content_holder col-lg-8 col-md-8">
+                <div class="content_holder col-lg-8 col-md-12 col-sm-12">
                     <p>Research paper web is a US-based agency that offers all kinds of academic writing services to students
                         worldwide. We have been in this business for close to ten years now and our experience has only gotten
                         better with time. We believe in enabling students all over the world achieve the best they can by
@@ -139,10 +139,10 @@ include("php/connect.php");
                         prophecy.
                     </p>
                     <br>
-                    <h3>Why are we the best?</h3>
-                    
-                    <div style="display: inline-block; width: 76%; vertical-align: middle;">
-                        <h4>Quality</h4>
+                    <h3><span class="colored-text">Why</span> are we the best?</h3>
+
+                    <div  class="we-are-the-best-subheadings" >
+                        <h4 class="about-headings">Quality</h4>
                         <p>At research paper web our greatest investment will always be towards delivering the best services
                             through open communication channels to us through our customer support department and giving
                             quality value for money such that every fee charged will be worth to the client. We believe that
@@ -150,17 +150,17 @@ include("php/connect.php");
                             advantage.
                         </p>
                     </div>
-                    
-                    <div style="display: inline-block; width: 76%; vertical-align: middle;">
-                        <h4>Privacy guarantee</h4>
+
+                    <div class="we-are-the-best-subheadings">
+                        <h4 class="about-headings">Privacy guarantee</h4>
                         <p>Your privacy is highly guarded at Research Paper Web. Nobody else (apart from you of course), will
                             know that you place orders for research papers at our platform. This is a simple respect for
                             privacy of our clients. Unlike many other platforms that expose your orders and questions to
                             all and sundry, we keep everything available to only you in your account.</p>
                     </div>
-                    
-                    <div style="display: inline-block; width: 76%; vertical-align: middle;">
-                        <h4>Affordability</h4>
+
+                    <div class="we-are-the-best-subheadings">
+                        <h4 class="about-headings">Affordability</h4>
                         <p>You do not have to pay a leg and an arm to have quality work done for you. At friendly prices that
                             will see you save your pocket, get the highest quality of work curated by our most professional
                             writers. After all, you are merely a student who is wtriving to make ends meet and we perfectly
@@ -179,12 +179,12 @@ include("php/connect.php");
                                 kept us above the rest. Place your order now and experience a world-class service at affordable
                                 prices!
                             </p>
-                          
+
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-4">
+                <div class="hidden-lg col-md-3"></div>
+                <div class="col-lg-4 col-md-8 col-sm-12 calc-wrapper">
                     <!-- update main calc form -->
                     <div class="price-calc-wrap">
                         <div data-crm="loader" style="display: none;"></div>
@@ -242,7 +242,7 @@ include("php/connect.php");
                                         </div>
                                     </fieldset>
                                 </form>
-                                <div class="display_cost col-md-6">Standard Cost: </div>
+                                <div class="display_cost col-md-6 standard_cost">Standard Cost: </div>
                                 <div class="value col-md-6 display_cost">
 
                                     <div class="dollar_sign">&#36;</div>
@@ -275,7 +275,7 @@ include("php/connect.php");
         <div class="footer-section">
             <div class="row">
                 <div class="footer_links container">
-                    <a href="about.php">ABOUT US</a>
+                    <a href="#top">ABOUT US</a>
                     <a href="revision-policy.php">REVISION POLICY</a>
                     <a href="money-back.php">MONEY BACK POLICY</a>
                     <a href="disclaimer.php">DISCLAIMER</a>

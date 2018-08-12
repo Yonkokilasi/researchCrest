@@ -729,6 +729,7 @@ h2 {
         margin: 1px 0 5px 0
     }
 }
+
 .calc_order {
     margin-top: 0;
     border-color: white;
@@ -736,10 +737,12 @@ h2 {
     margin-bottom: 1rem;
     font-size: 18px;
 }
-.calc_order:hover{
+
+.calc_order:hover {
     border-color: black;
     color: black;
 }
+
 .header__buttons a[href*="/order"] {
     display: inline-block;
     vertical-align: middle;
@@ -821,7 +824,6 @@ h2 {
 .why-choose-us-text {
     color: #D6EFFF;
     font-size: 19px;
-    
 }
 
 .top-block__title {
@@ -2343,7 +2345,7 @@ button.content_accordion.active:after {
 
 /* About page  */
 
-.page_wrapper{
+.page_wrapper {
     margin-top: 7rem;
     background-image: url(../img/book-light.jpg);
     background-size: cover;
@@ -2351,11 +2353,94 @@ button.content_accordion.active:after {
     color: white;
     font-size: 23px;
 }
-.about-us-header{
+
+.we-are-the-best-subheadings {
+    display: inline-block;
+    width: 76%;
+    vertical-align: middle;
+}
+
+.about-us-header {
     text-align: center;
     font-size: 35px;
-    color:#FED18C;
 }
-.about-calc{
+
+.about-headings,
+.about-us-header,
+.colored-text {
+    color: #FED18C;
+}
+
+.about-headings {
+    margin-top: 20px;
+}
+
+.about-calc {
     margin-left: 8rem;
+}
+
+@media(max-width:1024px) {
+    .page_wrapper {
+        margin-top: 0;
+    }
+    .we-are-the-best-subheadings {
+        display: inline-block;
+        width: auto;
+    }
+    .about-us-header {
+        margin-top: 5rem;
+    }
+    .calc-wrapper {
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    .cw-discount-title {
+        text-align: center;
+    }
+    .about-calc {
+        margin-left: 7rem;
+    }
+    .standard_cost{
+            margin-top: 11px;
+    }
+    .display_cost{
+        font-size: 19px;
+    }
+}
+
+@media(max-width:800px) {
+    .about-calc {
+        margin-left: 9rem;
+        margin-top: 1rem;
+    }
+    .display_cost {
+        margin-left: 3rem;
+    }
+    .price-calc-wrap {
+        width: 85%;
+    }
+    form#calc {
+        padding: 11px;
+    }
+}
+
+@media(max-width:600px) {
+    .price-calc-wrap {
+        width: 100%;
+    }
+    .about-calc {
+        margin-left: 1rem;
+    }
+    .calculator_wrapper {
+        padding-bottom: 2px;
+    }
+    .display_cost {
+        margin-left: 0;
+    }
+}
+
+@media(min-width:1024px) {
+    .hidden-lg {
+        display: none;
+    }
 }
