@@ -440,57 +440,45 @@ h2 {
     padding: 0
 }
 
-.slicknav_menu {
+
+@media(max-width:380px) {
+    .slicknav_menu {
     float: right;
     overflow: hidden;
     position: absolute;
     top: 50px;
     left: 290px;
-}
-
-@media(max-width:420px) {
-    .slicknav_menu {
-        top: 50px;
-        left: 340px;
     }
-}
 
-@media(max-width:380px) {
-    .slicknav_menu {
-        top: 50px;
-        left: 290px;
-    }
-}
-
-.slicknav_open .slicknav_icon-bar {
+  .slicknav_open .slicknav_icon-bar {
     background: #fff
-}
+  }
 
-.slicknav_btn {
+  .slicknav_btn {
     margin-top: 23px;
     margin-left: 10px;
     font: 700 16px/20px Arial, sans-serif;
     z-index: 10000000
-}
+  }
 
-.slicknav_icon,
-.slicknav_menutxt {
+  .slicknav_icon,
+  .slicknav_menutxt {
     float: left
-}
+  }
 
-.slicknav_menutxt {
+  .slicknav_menutxt {
     display: none
-}
+  }
 
-.slicknav_icon-bar {
+  .slicknav_icon-bar {
     display: block;
     font: 700 16px/20px Arial, sans-serif;
     width: 1.5em;
     height: .125em;
     margin: 3px;
     background: #eee
+  }
 }
-
 .topnav {
     overflow: hidden;
 }
