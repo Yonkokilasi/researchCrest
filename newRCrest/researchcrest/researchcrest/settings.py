@@ -25,8 +25,8 @@ SECRET_KEY = '!a+fz1kdby$83w8!!r@l+_n=sidn9+3u*p)fiy!e^v!p$wd@)@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [u'localhost']
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Application definition
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rcrest',
 ]
 
 MIDDLEWARE = [
@@ -117,4 +118,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'rcrest/static'),
+)
+MEDIA_ROOT = '%s/media'%BASE_DIR
+MEDIA_URL='/media/'

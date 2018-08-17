@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,15 +25,15 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Oxygen|Quicksand|Roboto+Mono|Rubik" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel='stylesheet' href='css/main.css' type='text/css' />
-    <link rel='stylesheet' href='css/style.css' type='text/css' media='none' />
-    <link rel='stylesheet' id='plugins-css' href='css/plugins.css' type='text/css' media='none' />
+    <link rel='stylesheet' href="{% static 'css/main.css'%}" type='text/css' />
+    <link rel='stylesheet' href="{% static 'css/style.css'%}" type='text/css' media='none' />
+    <link rel='stylesheet' id='plugins-css' href="{% static 'css/plugins.css'%}" type='text/css' media='none' />
 
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/smooth-scroll.js"></script>
-    <script src="js/navigation.js"></script>
-    <script type="text/javascript" src="js/typewriter.js"></script>
+    <script src="{% static 'js/smooth-scroll.js'%}"></script>
+    <script src="{% static 'js/navigation.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/typewriter.js'%}"></script>
     <!-- End Trustbox script -->
 </head>
 
@@ -65,7 +66,7 @@
                                         <a href="#how-it-works" itemprop="url">How it works</a>
                                     </li>
                                     <li id="menu-item-1534" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1534">
-                                        <a href="about.html" itemprop="url">About</a>
+                                        <a href="{% url 'about' %}" itemprop="url">About</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -74,9 +75,9 @@
                             <div class="mobile-nav" id="mobile_nav"></div>
                             <div class="header__buttons">
 
-                                <a href="post-order.php" id="order_btn_header " class="order-nav-btn btn">Order</a>
+                                <a href="#" id="order_btn_header " class="order-nav-btn btn">Order</a>
 
-                                <a href="login.php" id="login_btn_header" class="order-nav-btn btn">Login</a>
+                                <a href="#" id="login_btn_header" class="order-nav-btn btn">Login</a>
                             </div>
                         </div>
                     </div>
@@ -317,7 +318,7 @@
                                         <div class="dollar_sign">&#36;</div>
                                         <div id="lblRes" class="total-amount-calc">13</div>
                                     </div>
-                                    <a class="calc_order btn" href="post-order.php" rel="nofollow">Continue</a>
+                                    <a class="calc_order btn" href="#" rel="nofollow">Continue</a>
 
                                 </div>
 
@@ -506,7 +507,7 @@
                                     Satisfaction is what we always advocate for. Your low budget will not deny you the satisfaction
                                     as long as you deal with Research Paper Crest.
                                     <br>
-                                    <a class="btn card-btn" href="post-order.php" rel="nofollow">Order now</a>
+                                    <a class="btn card-btn" href="#" rel="nofollow">Order now</a>
                                 </p>
 
                         </div>
@@ -528,7 +529,7 @@
                                     Each and every writer understands the need to abide by the instructions provided. Today,
                                     we stand as the most experienced research paper writing team. We hold pride in that.
                                     <br>
-                                    <a class="btn card-btn" href="post-order.php" rel="nofollow">Order now</a>
+                                    <a class="btn card-btn" href="#" rel="nofollow">Order now</a>
                                 </p>
                         </div>
                     </div>
@@ -549,7 +550,7 @@
                                     complexity of discipline of the research paper that you want done. Let us do the heavy
                                     lifting Graduate students are not left behind. They will get equally best research papers.
                                     <br>
-                                    <a class="btn card-btn" href="post-order.php" rel="nofollow">Order now</a>
+                                    <a class="btn card-btn" href="#" rel="nofollow">Order now</a>
                                 </p>
 
                         </div>
@@ -572,7 +573,7 @@
                                     such as the cover page, list of references and much more. Research Paper Crest just gave
                                     you the reason to smile. Kiss bad grades goodbye with the best rates on research papers.
                                     <br>
-                                    <a class="btn card-btn" href="post-order.php" rel="nofollow">Order now</a>
+                                    <a class="btn card-btn" href="#" rel="nofollow">Order now</a>
 
                                 </p>
                         </div>
@@ -710,11 +711,11 @@
         <div class="footer-section">
             <div class="row">
                 <div class="footer_links container">
-                    <a href="about.php">ABOUT US</a>
-                    <a href="revision-policy.php">REVISION POLICY</a>
-                    <a href="money-back.php">MONEY BACK POLICY</a>
-                    <a href="disclaimer.php">DISCLAIMER</a>
-                    <a href="contact.php">CONTACT US</a>
+                    <a href="{% url 'about' %}">ABOUT US</a>
+                    <a href="#">REVISION POLICY</a>
+                    <a href="#">MONEY BACK POLICY</a>
+                    <a href="#">DISCLAIMER</a>
+                    <a href="#">CONTACT US</a>
                 </div>
                 <div class="col-md-12">
                     <div class="social_links">
@@ -740,7 +741,7 @@
                 </div>
     </footer>
     <a href="#main" class="scroll top_scroller hidden-sm-down">
-        <img src="img/icons/i-up-arrow.svg" alt="scroller-to-top">
+        <img src="{% static 'img/icons/i-up-arrow.svg'%}" alt="scroller-to-top">
         </span>
     </a>
 
