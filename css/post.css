@@ -1,7 +1,7 @@
 .calcultor_post_wrapper {
-    height: 500px;
     background: url(../img/stack-of-books.jpg) no-repeat 50% 3%;
     background-size: cover;
+    margin-bottom: 3rem;
 }
 
 .price-calc-wrap,
@@ -39,9 +39,10 @@
     font-weight: bold;
     font-size: 20px;
 }
-.get-answer>a:hover{
+
+.get-answer>a:hover {
     text-decoration: none;
-    color:#D6EFFF;
+    color: #D6EFFF;
 }
 
 .post-body {
@@ -54,4 +55,26 @@
     text-align: justify;
     margin-top: 2rem;
     line-height: 2rem;
+}
+
+@media(min-width:1600px) {
+    .calcultor_post_wrapper {
+        height: 500px;
+        margin-bottom: 0;
+    }
+}
+@media(max-width:600px) {
+    .calcultor_post_wrapper {
+        margin:0;
+    }
+    .price-calc-wrap{
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+    .top-block__content{
+        margin-top: 0;
+    }
+    .post-body-content{
+        padding: 0;
+    }
 }
