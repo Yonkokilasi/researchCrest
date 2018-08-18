@@ -228,23 +228,23 @@ h2 {
 @media (min-width:1200px) {
     .header .nav-col,
     .header__phone-col {
-        padding-top: 28px
+        padding-top: 13px;
     }
 }
 
 @media (max-width:767px) {
     .header {
         position: relative !important;
-        background: #000 !important
+        background: #000 !important;
     }
 }
 
 .header__logo {
-    max-width: 27px
+    max-width: 27px;
 }
 
 .header__logo img {
-    width: auto
+    width: auto;
 }
 
 .header__logo a {
@@ -276,7 +276,7 @@ h2 {
 
 @media (min-width:1200px) {
     .header__logo a {
-        padding: 24px 0 20px 0
+        padding: 3px 0 20px 0
     }
 }
 
