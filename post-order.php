@@ -111,7 +111,7 @@
                                     </span>
                                 </div>
 
-                                <form method="POST" action="php/post_order.php" id="order" name="order">
+                                <form method="POST" action="post_order.php" id="order" name="order">
                                     <div class="wizard_content_details form-row">
                                         <div class="form-group  col-md-6">
                                             <label for="paperSubject" class=""> Paper Subject</label>
