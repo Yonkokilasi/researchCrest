@@ -21,6 +21,14 @@
 
     <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, print" />
     <link rel="stylesheet" href="css/table-styler.css" type="text/css" media="screen, print" />
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script> -->
+    <script src="js/dashboard.js"></script>
+
+    <!-- Custom  JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
 </head>
 
 <body>
@@ -33,7 +41,7 @@
 
             <?//php include('includes/header.php'); ?>
         </nav>
-        <div class="container">
+        <div class="container-fluid">
             <?php include('includes/sidebar.php'); ?>
 
             <!-- Page Content -->
@@ -247,15 +255,6 @@
     </div>
     <!-- /#wrapper -->
 
-      <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" async></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <!-- <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script> -->
-    <script src="js/dashboard.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/sb-admin-2.js"></script>
     <?//php
     //$sql = "SELECT * FROM `notifications` WHERE writerId = '$session_id' AND status = 'not viewed'";
     //$result = mysqli_query($Con, $sql);

@@ -1,15 +1,18 @@
 <?php
 include("connect.php");
 ?>
-<div class="navbar-default sidebar" role="navigation" style="position:absolute; margin-top: 0;background-color: #eeeeee;z-index:1000;">
+<div class="navbar-default sidebar" role="navigation" >
     <div class="sidebar-nav navbar-collapse">
         <ul class="nav" id="side-menu">
             <li>
-                <a href="index.php"><i class="fa fa-dashboard text-success fa-fw fa-2x"></i>MAIN DASHBOARD</a>
+                <a href="index.php"><i class="fa fa-dashboard icon-blue fa-fw fa-2x"></i>Dashboard</a>
             </li>            
             <li>
-                <a href="#"><i class="fa fa-th-list fa-fw text-success fa-2x"></i> ORDERS<span class="pull-right"></span></a>
-                    <ul class="nav nav-second-level">
+                <a href="#">
+                    ORDERS<span class="pull-right students-sidebar"></span>
+                    <i id="second-level-order-trigger" class="fa fa-chevron-right pull-right rotate"></i>
+                </a>
+                    <ul class="nav nav-second-level orders display-none">
                         <li>
                         <a href="posted.php">
                         <i class="fa fa-arrow-circle-right fa-fw fa-2x"></i>
@@ -61,12 +64,16 @@ include("connect.php");
             </li>
             <li>
                 <a href="bids.php">
-                <i class="fa fa-tags text-success fa-fw fa-2x"></i>
-                ORDERS ON BID<span class="pull-right bids-sidebar"></span></a>
+                <i class="fa fa-tags icon-blue fa-fw fa-2x"></i>
+                Orders on bid<span class="pull-right bids-sidebar"></span></a>
                 </li>
             <li>
-                <a href="#"><i class="fa fa-user fa-fw text-success fa-2x"></i> USERS<span class="pull-right total-users-sidebar"></span></a>
-                    <ul class="nav nav-second-level">
+                <a href="#">
+
+                    </i> Users
+                    <i id="second-level-user-trigger" class="fa fa-chevron-right pull-right rotate"></i>
+                </a>
+                    <ul class="nav nav-second-level users display-none">
                         <li>
                         <a href="students.php">
                         <i class="fa fa-suitcase fa-fw text-info fa-2x"></i>
@@ -92,40 +99,40 @@ include("connect.php");
             </li>
             <li>
                 <a href="feedback.php">
-                <i class="fa fa-list-alt fa-fw text-success fa-2x"></i> FEEDBACKS
+                <i class="fa fa-list-alt fa-fw icon-blue fa-2x"></i> FEEDBACKS
                 <span class="pull-right"></span></a>
             </li>
             <li>
                 <a href="samples.php">
-                <i class="fa fa-file-pdf-o fa-fw text-success fa-2x"></i> SAMPLES
+                <i class="fa fa-file-pdf-o fa-fw icon-blue fa-2x"></i> SAMPLES
                 <span class="pull-right"></span></a>
             </li>
             <li>
                 <a href="blog.php">
-                <i class="fa fa-desktop fa-fw text-success fa-2x"></i> BLOG
+                <i class="fa fa-desktop fa-fw icon-blue fa-2x"></i> BLOG
                 <span class="pull-right"></span></a>
             </li>
             <li>
                 <a href="seo.php">
-                <i class="fa fa-book fa-fw text-success fa-2x"></i> SEO PAGES
+                <i class="fa fa-book fa-fw icon-blue fa-2x"></i> SEO PAGES
                 <span class="pull-right"></span></a>
             </li>
             <li>&nbsp;</li>
             <li style="border:1px solid #757575; border-left:1px solid #757575; background-color: #bdbdbd">
                 <a href="messages.php">
-                <i class="fa fa-comments-o text-success fa-fw fa-2x"></i> Messages
+                <i class="fa fa-comments-o icon-blue fa-fw fa-2x"></i> Messages
                 <span class="pull-right messaging-sidebar"></span></a>
             </li>
             <li style="border-left:1px solid #757575; border-right:1px solid #757575; background-color: #bdbdbd">
                 <a href="notifications.php">
-                <i class="fa fa-bullhorn fa-fw text-success fa-2x"></i> Notifications
+                <i class="fa fa-bullhorn fa-fw icon-blue fa-2x"></i> Notifications
                 <span class="pull-right view-notification-sidebar"></span></a>
             </li>
             <li  style="border-bottom:1px solid #757575;border:1px solid #757575; background-color: #bdbdbd">
-                <a href="#"><i class="fa fa-money fa-fw text-success fa-2x"></i> Payments</a>
+                <a href="#"><i class="fa fa-money fa-fw icon-blue fa-2x"></i> Payments</a>
                     <ul class="nav nav-second-level">
                         <li>
-			            <a href="finance.php"><i class="fa fa-bolt fa-fw text-success"></i> Financial Overview</a>
+			            <a href="finance.php"><i class="fa fa-bolt fa-fw icon-blue"></i> Financial Overview</a>
 			            </li>
                     </ul>
                     <!-- /.nav-second-level -->

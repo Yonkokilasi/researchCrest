@@ -34,3 +34,14 @@ $(function () {
         element.addClass('active');
     }
 });
+
+$(document).ready(function () {
+    $('#second-level-order-trigger').click(function () {
+        $(this).toggleClass('down');
+        $('.orders').toggleClass('display-none');
+    });
+    $('#second-level-user-trigger').click(function () {
+        $(this).toggleClass('down');
+        $('.users').toggleClass('display-none');
+    });
+});

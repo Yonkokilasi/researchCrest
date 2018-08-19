@@ -21,10 +21,23 @@ body {
 @media(min-width:768px) {
     #page-wrapper {
         position: inherit;
-        margin: 0 0 0 250px;
+        margin: 0 0 0 270px;
         padding: 0 30px;
         border-left: 1px solid #e7e7e7;
     }
+}
+.nav a{
+    color: white;   
+}
+.navbar-default.sidebar {
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    margin-top: 0;
+    background-color: #FED18C;
+    z-index: 1000;
+    border-radius: 10px;
+    margin-top: 2rem;
+    color: white;
 }
 
 .navbar-top-links {
@@ -98,9 +111,9 @@ body {
     border-bottom: 1px solid #e7e7e7;
 }
 
-.sidebar ul li a.active {
+/* .sidebar ul li a.active {
     background-color: #eee;
-}
+} */
 
 .sidebar .arrow {
     float: right;
@@ -359,6 +372,41 @@ table.dataTable thead .sorting:after {
     height: 58px;
 }
 
-.panel-heading{
-    height: 100px;;
+.panel-heading {
+    height: 100px;
+    ;
+}
+
+.display-none {
+    display: none;
+}
+
+.fa-chevron-right {
+    font-size: 23px;
+}
+
+.fa-2x{
+    font-size: 20px;
+}
+
+.rotate {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.rotate.down {
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.icon-blue{
+    color: #D6EFFF;
+}
+
+.nav>li>a:hover{
+    background-color: #D6EFFF;
+    color: #FED18C;
 }
