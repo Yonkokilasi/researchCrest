@@ -79,7 +79,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="posted.php">
+                                    <a href="pages/posted.php">
                                         <div class="panel-footer">
                                             <span class="pull-left">Posted Orders</span>
                                             <span class="pull-right">
@@ -102,7 +102,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="progress.php">
+                                    <a href="pages/progress.php">
                                         <div class="panel-footer">
                                             <span class="pull-left">Orders Progress</span>
                                             <span class="pull-right">
@@ -125,7 +125,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="completed.php">
+                                    <a href="pages/completed.php">
                                         <div class="panel-footer">
                                             <span class="pull-left">Completed Orders</span>
                                             <span class="pull-right">
@@ -148,7 +148,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="finance.php">
+                                    <a href="pages/finance.php">
                                         <div class="panel-footer">
                                             <span class="pull-left">PayPal Debits</span>
                                             <span class="pull-right">
@@ -172,7 +172,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="revision.php">
+                                    <a href="pages/revision.php">
                                         <div class="panel-footer">
                                             <span class="pull-left">Revision</span>
                                             <span class="pull-right">
@@ -192,7 +192,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="disputed.php">
+                                    <a href="pages/disputed.php">
                                         <div class="panel-footer">
                                             <span class="pull-left">Disputes</span>
                                             <span class="pull-right">
@@ -212,7 +212,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="notifications.php">
+                                    <a href="pages/notifications.php">
                                         <div class="panel-footer">
                                             <span class="pull-left">New Notification(s)</span>
                                             <span class="pull-right">
@@ -232,7 +232,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="messages.php">
+                                    <a href="pages/messages.php">
                                         <div class="panel-footer">
                                             <span class="pull-left">New Message(s)</span>
                                             <span class="pull-right">
