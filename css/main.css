@@ -234,7 +234,7 @@ h2 {
 
 @media (max-width:767px) {
     .header {
-        position: relative !important;
+        position: fixed !important;
         background: #000 !important;
     }
 }
@@ -479,6 +479,46 @@ h2 {
     background: #eee
   }
 }
+@media(max-width:768px) {
+    
+    .slicknav_menu {
+    float: right;
+    overflow: hidden;
+    position: absolute;
+    top: 50px;
+    left: 290px;
+    }
+
+  .slicknav_open .slicknav_icon-bar {
+    background: #fff;
+  }
+
+  .slicknav_btn {
+    margin-top: 23px;
+    margin-left: 10px;
+    font: 700 16px/20px Arial, sans-serif;
+    z-index: 10000000;
+  }
+
+  .slicknav_icon,
+  .slicknav_menutxt {
+    float: left;
+  }
+
+  .slicknav_menutxt {
+    display: none;
+  }
+
+  .slicknav_icon-bar {
+    display: block;
+    font: 700 16px/20px Arial, sans-serif;
+    width: 1.5em;
+    height: .125em;
+    margin: 3px;
+    background: #eee;
+  }
+ 
+}
 .topnav {
     overflow: hidden;
 }
@@ -506,6 +546,14 @@ h2 {
 .topnav .icon {
     display: none;
 }
+
+ul.topnav li {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
 
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
@@ -2199,18 +2247,6 @@ button.content_accordion.active:after {
     .cards-wrapper .card {
         height: auto;
         margin-bottom: 4rem;
-    }
-}
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (max-width: 768px) {
-    ul.topnav li {
-        display: none;
-    }
-    ul.topnav li.icon {
-        float: right;
-        display: inline-block;
     }
 }
 
