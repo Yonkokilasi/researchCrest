@@ -35,6 +35,7 @@ $(function () {
     }
 });
 
+// onclick show second level menus
 $(document).ready(function () {
     $('#second-level-order-trigger').click(function () {
         $(this).toggleClass('down');
@@ -43,5 +44,9 @@ $(document).ready(function () {
     $('#second-level-user-trigger').click(function () {
         $(this).toggleClass('down');
         $('.users').toggleClass('display-none');
+    });
+    $('#second-level-finance-trigger').click(function () {
+        $(this).toggleClass('down');
+        $('.finance').toggleClass('display-none');
     });
 });

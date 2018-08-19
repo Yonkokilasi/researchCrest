@@ -402,10 +402,6 @@ table.dataTable thead .sorting:after {
     transform: rotate(90deg);
 }
 
-.icon-blue{
-    color: #D6EFFF;
-}
-
 .nav>li>a:hover{
     background-color: #D6EFFF;
     color: #FED18C;
