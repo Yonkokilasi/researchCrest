@@ -14,13 +14,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Oxygen|Quicksand|Roboto+Mono|Rubik" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='../css/bootstrap.min.css' type='text/css' />
-    <!-- Custom CSS -->
     <link href="css/dashboard.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-
-    <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, print" />
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" media="screen, print" />
     <link rel="stylesheet" href="css/table-styler.css" type="text/css" media="screen, print" />
+    
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
