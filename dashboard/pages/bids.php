@@ -1,16 +1,4 @@
-<?//php
-// include("connect.php");
-// include("session.php");
-// include('pagination/function.php');
-// $page = (int) (!isset($_GET["page"]) ? 1 : $_GET["page"]);
-// $limit = 10;
-// $startpoint = ($page * $limit) - $limit;
 
-// $statement = "`bids`";
-// $cr = "SELECT * FROM `bids`";
-// $tl = mysqli_query($Con, $cr);
-// $np = mysqli_num_rows($tl);
-?>
     <!DOCTYPE html>
     <html lang="en">
 
