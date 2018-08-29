@@ -130,14 +130,6 @@ root {
   margin-left: 0;
 }
 
-.card>.list-group:first-child .list-group-item:first-child {
-  border-top-radius: 10px;
-}
-
-.card>.list-group:last-child .list-group-item:last-child {
-  border-bottom-radius: 10px;
-}
-
 .card-body {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -216,16 +208,6 @@ root {
 .card-img {
   width: 100%;
   border-radius: var(--card-inner-border-radius);
-}
-
-.card-img-top {
-  width: 100%;
-  border-top-radius: var(--card-inner-border-radius);
-}
-
-.card-img-bottom {
-  width: 100%;
-  border-bottom-radius: var(--card-inner-border-radius);
 }
 
 .card-deck {
