@@ -87,8 +87,8 @@
                                     </div>
                                 </div>
                             </div>
-                         
-                         
+
+
                             <div class="col-6 col-lg-3">
                                 <div class="card">
                                     <div class="card-body">
@@ -218,99 +218,99 @@
                                 </div>
                             </div>
 
-                                <div class=" col-6 col-lg-3 ">
-                                    <div class="card ">
-                                        <div class="card-body ">
-                                            <div class="clearfix ">
-                                                <!-- posted order value goes here -->
-                                                <div class="h5 text-secondary mb-0 mt-1 ">200</div>
-                                                <div class="text-muted text-uppercase font-weight-bold font-xs small ">New
-                                                    Message(s)</div>
-                                            </div>
-                                            <div class="b-b-1 pt-3 "></div>
-                                            <hr>
-                                            <div class="more-info pt-2 ">
-                                                <a class="font-weight-bold font-xs btn-block text-muted small " href="# ">View
-                                                    More
-                                                    <i class="fa fa-angle-right float-right font-lg "></i>
-                                                </a>
-                                            </div>
+                            <div class=" col-6 col-lg-3 ">
+                                <div class="card ">
+                                    <div class="card-body ">
+                                        <div class="clearfix ">
+                                            <!-- posted order value goes here -->
+                                            <div class="h5 text-secondary mb-0 mt-1 ">200</div>
+                                            <div class="text-muted text-uppercase font-weight-bold font-xs small ">New
+                                                Message(s)</div>
+                                        </div>
+                                        <div class="b-b-1 pt-3 "></div>
+                                        <hr>
+                                        <div class="more-info pt-2 ">
+                                            <a class="font-weight-bold font-xs btn-block text-muted small " href="# ">View
+                                                More
+                                                <i class="fa fa-angle-right float-right font-lg "></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <!-- /.row -->
+
                     </div>
-                    <!-- /.container-fluid -->
+                    <!-- /.row -->
                 </div>
-
+                <!-- /.container-fluid -->
             </div>
-            <!-- /#page-wrapper -->
-            <!-- footer-->
-        </div>
-        <!-- /#wrapper -->
-        <script type="text/javascript ">
-            //Check timezone checker
-            $(document).ready(function () {
-                $.ajaxSetup({
-                    cache: false
-                }); // This part addresses an IE bug.  without it, IE will only load the first number and will never refresh
-                setInterval(function () {
-                    var msgId = "null ";
-                    $.ajax({
-                            url: "php/check_zone.php? ",
-                            data: msgId,
-                            success: function (result) {
 
-                                if (result == "0 ") {
-                                    return false;
-                                } else if (result == "1 ") {
-                                    alertify.confirm(
-                                        "No timezone selected. Go to settings and <strong>UPDATE your
-                                        timezone < /strong>", function (e) { if (e) { / /
-                                        alertify.success("You've clicked OK"); window.location
-                                        .href =
-                                        'settings.php';
-                                    }
-                                    else {
-                                        alertify.error("You've clicked Cancel");
-                                    }
-                                });
-                        }
-                        else {
-                            return
-                            false;
-                        }
+        </div>
+        <!-- /#page-wrapper -->
+        <!-- footer-->
+    </div>
+    <!-- /#wrapper -->
+    <script type="text/javascript ">
+        //Check timezone checker
+        $(document).ready(function () {
+            $.ajaxSetup({
+                cache: false
+            }); // This part addresses an IE bug.  without it, IE will only load the first number and will never refresh
+            setInterval(function () {
+                var msgId = "null ";
+                $.ajax({
+                        url: "php/check_zone.php? ",
+                        data: msgId,
+                        success: function (result) {
+
+                            if (result == "0 ") {
+                                return false;
+                            } else if (result == "1 ") {
+                                alertify.confirm(
+                                    "No timezone selected. Go to settings and <strong>UPDATE your
+                                    timezone < /strong>", function (e) { if (e) { / /
+                                    alertify.success("You've clicked OK"); window.location
+                                    .href =
+                                    'settings.php';
+                                }
+                                else {
+                                    alertify.error("You've clicked Cancel");
+                                }
+                            });
                     }
-                })
-            }, 1000); // the "3000" }); //Check phone number $(document).ready(function
-            () {
-                $.ajaxSetup({
-                    cache: false
-                }); // This part addresses an IE bug. without it, IE will
-                only load the first number and will never refresh setInterval(function () {
-                            var msgId = "null";
-                            $.ajax({
-                                        url: "php/check_phone.php?",
-                                        data: msgId,
-                                        success: function (result) {
-                                                if (result ==
-                                                    "0") {
-                                                    return false;
-                                                } else if (result == "1") {
-                                                    alertify.confirm("Phone number NOT set.
-                                                        Go to settings and < strong > UPDATE your phone number <
-                                                        /strong>", function (e) { if (e) { / /
-                                                        alertify.success("You've clicked OK"); window.location.href =
-                                                        'settings.php';
-                                                    }
-                                                    else {
-                                                        alertify.error("You've
-                                                                clicked Cancel "); } }); } else { return false; } } }) }, 1000); // the "
-                                                                3000 " });
-        </script>
+                    else {
+                        return
+                        false;
+                    }
+                }
+            })
+        }, 1000); // the "3000" }); //Check phone number $(document).ready(function
+        () {
+            $.ajaxSetup({
+                cache: false
+            }); // This part addresses an IE bug. without it, IE will
+            only load the first number and will never refresh setInterval(function () {
+                        var msgId = "null";
+                        $.ajax({
+                                    url: "php/check_phone.php?",
+                                    data: msgId,
+                                    success: function (result) {
+                                            if (result ==
+                                                "0") {
+                                                return false;
+                                            } else if (result == "1") {
+                                                alertify.confirm("Phone number NOT set.
+                                                    Go to settings and < strong > UPDATE your phone number <
+                                                    /strong>", function (e) { if (e) { / /
+                                                    alertify.success("You've clicked OK"); window.location.href =
+                                                    'settings.php';
+                                                }
+                                                else {
+                                                    alertify.error("You've
+                                                            clicked Cancel "); } }); } else { return false; } } }) }, 1000); // the "
+                                                            3000 " });
+    </script>
 
 </body>
 

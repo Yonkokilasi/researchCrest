@@ -1,0 +1,357 @@
+root {
+    --card-border-radius: 10px;
+    --card-border-color: blue;
+    --facebook: #3b5998;
+    --twitter: #00aced;
+    --linkedin: #4875b4;
+    --google-plus: #d34836;
+    --flickr: #ff0084;
+    --tumblr: #32506d;
+    --xing: #026466;
+    --github: #4183c4;
+    --html5: #e34f26;
+    --openid: #f78c40;
+    --stack-overflow: #fe7a15;
+    --youtube: #b00;
+    --css3: #0170ba;
+    --dribbble: #ea4c89;
+    --google-plus: #bb4b39;
+    --instagram: #517fa4;
+    --pinterest: #cb2027;
+    --vk: #45668e;
+    --yahoo: #400191;
+    --behance: #1769ff;
+    --dropbox: #007ee5;
+    --reddit: #ff4500;
+    --spotify: #7ab800;
+    --vine: #00bf8f;
+    --foursquare: #1073af;
+    --vimeo: #aad450;
+    --container-bg: #f1f2f7;
+    --menu-bg: #272c33;
+    --header-color: #00acc1;
+    --header-bg: #fff;
+    --menu-color: #272c33;
+    --color-red-error: rgb(185, 74, 72);
+    --color-grey-arrow: rgba(204, 204, 204, 0.2);
+    --width-default: 220px;
+    --zindex-select-dropdown: 1035;
+    /* Bootstrap */
+    /* // stylelint-disable */
+    --white: #fff;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #868e96;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+    --black: #000;
+    --header-color: #00acc1;
+    --bg-color: #272c33;
+    --section-title-bg: #263238;
+    --dark-text-color: #fff;
+    --dark-text-second-color: #99abb4;
+    --dark-border-color: rgba(120, 130, 140, 0.4);
+    --dark-hover-color: #868e96;
+    --border-color: --gray-200;
+    --layout-transition-speed: .25s;
+    /* // Cards */
+    --card-spacer-y: .75rem;
+    --card-spacer-x: 1.25rem;
+    /* // Default BootStrap Variables */
+    --text-muted: --gray-600;
+    --spacer: 1rem;
+    /* // Assumes the browser default, typically `16px` */
+    --font-size-base: 1rem;
+    --font-size-lg: (--font-size-base * 1.25);
+    --font-size-sm: (--font-size-base * .875);
+    --body-bg: --white;
+    --body-color: --gray-900;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --primary: --blue;
+    --secondary: --gray-600;
+    --success: --green;
+    --info: --cyan;
+    --warning: --yellow;
+    --danger: --red;
+    --light: --gray-100;
+    --dark: --gray-800;
+}
+
+/* //
+// Base styles
+// */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--card-bg);
+    background-clip: border-box;
+    border: (var --card-border-width solid) (var --card-border-color);
+    @include border-radius(var --card-border-radius);
+
+    >hr {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    >.list-group:first-child {
+        .list-group-item:first-child {
+            @include border-top-radius(--card-border-radius);
+        }
+    }
+
+    >.list-group:last-child {
+        .list-group-item:last-child {
+            @include border-bottom-radius(var(--card-border-radius));
+        }
+    }
+}
+
+.card-body {
+    // Enable `flex-grow: 1` for decks and groups so that card blocks take up
+    // as much space as possible, ensuring footers are aligned to the bottom.
+    flex: 1 1 auto;
+    padding: var(--card-spacer-x);
+}
+
+.card-title {
+    margin-bottom: var(--card-spacer-y);
+}
+
+.card-subtitle {
+    margin-top: -(var(--card-spacer-y / 2));
+    margin-bottom: 0;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.card-link {
+    @include hover {
+        text-decoration: none;
+    }
+
+    +.card-link {
+        margin-left: var(--card-spacer-x);
+    }
+}
+
+//
+// Optional textual caps
+//
+.card-header {
+    padding: var(--card-spacer-y) - var(--card-spacer-x);
+    /* // Removes the default margin-bottom of <hN> */
+    margin-bottom: 0;
+    background-color: var(--card-cap-bg);
+    border-bottom: var(--card-border-width)solid var(--card-border-color);
+
+    &:first-child {
+        @include border-radius(var(--card-inner-border-radius)var(--card-inner-border-radius 0 0));
+    }
+
+    +.list-group {
+        .list-group-item:first-child {
+            border-top: 0;
+        }
+    }
+}
+
+.card-footer {
+    padding: var(--card-spacer-y) -var(--card-spacer-x);
+    background-color: var(--card-cap-bg);
+    border-top: var(--card-border-width solid var(--card-border-color);
+
+    &:last-child {
+        @include border-radius(0 0 var(--card-inner-border-radius var(--card-inner-border-radius);
+    }
+}
+
+//
+// Header navs
+//
+.card-header-tabs {
+    margin-right: -(var(--card-spacer-x / 2));
+    margin-bottom: -var(--card-spacer-y);
+    margin-left: -(var(--card-spacer-x / 2));
+    border-bottom: 0;
+}
+
+.card-header-pills {
+    margin-right: -(var(--card-spacer-x / 2));
+    margin-left: -(var(--card-spacer-x / 2));
+}
+
+// Card image
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: var(--card-img-overlay-padding));
+}
+
+.card-img {
+    width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+    @include border-radius(var(--card-inner-border-radius)));
+}
+
+// Card image caps
+.card-img-top {
+    width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+    @include border-top-radius(var(--card-inner-border-radius)));
+}
+
+.card-img-bottom {
+    width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+    @include border-bottom-radius(var(--card-inner-border-radius)));
+}
+
+// Card deck
+.card-deck {
+    display: flex;
+    flex-direction: column;
+
+    .card {
+        margin-bottom: var(--card-deck-margin));
+    }
+
+    @include media-breakpoint-up(sm) {
+        flex-flow: row wrap;
+        margin-right: -var(--card-deck-margin));
+        margin-left: -var(--card-deck-margin));
+
+        .card {
+            display: flex;
+            // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored
+            flex: 1 0 0%;
+            flex-direction: column;
+            margin-right: var(--card-deck-margin));
+            margin-bottom: 0; // Override the default
+            margin-left: var(--card-deck-margin));
+        }
+    }
+}
+
+//
+// Card groups
+//
+.card-group {
+    display: flex;
+    flex-direction: column;
+
+    // The child selector allows nested `.card` within `.card-group`
+    // to display properly.
+    >.card {
+        margin-bottom: var(--card-group-margin));
+    }
+
+    @include media-breakpoint-up(sm) {
+        flex-flow: row wrap;
+
+        // The child selector allows nested `.card` within `.card-group`
+        // to display properly.
+        >.card {
+            // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored
+            flex: 1 0 0%;
+            margin-bottom: 0;
+
+            +.card {
+                margin-left: 0;
+                border-left: 0;
+            }
+
+            // Handle rounded corners
+            @if var(--enable-rounded) {
+                &:first-child {
+                    @include border-right-radius(0);
+
+                    .card-img-top,
+                    .card-header {
+                        border-top-right-radius: 0;
+                    }
+
+                    .card-img-bottom,
+                    .card-footer {
+                        border-bottom-right-radius: 0;
+                    }
+                }
+
+                &:last-child {
+                    @include border-left-radius(0);
+
+                    .card-img-top,
+                    .card-header {
+                        border-top-left-radius: 0;
+                    }
+
+                    .card-img-bottom,
+                    .card-footer {
+                        border-bottom-left-radius: 0;
+                    }
+                }
+
+                &:only-child {
+                    @include border-radius(var(--card-border-radius));
+
+                    .card-img-top,
+                    .card-header {
+                        @include border-top-radius(var(--card-border-radius));
+                    }
+
+                    .card-img-bottom,
+                    .card-footer {
+                        @include border-bottom-radius(var(--card-border-radius));
+                    }
+                }
+
+                &:not(:first-child):not(:last-child):not(:only-child) {
+                    @include border-radius(0);
+
+                    .card-img-top,
+                    .card-img-bottom,
+                    ) .card-header,
+                    .card-footer {
+                        @include border-radius(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+// Columns
+//
+.card-columns {
+    .card {
+        margin-bottom: var(--card-columns-margin);
+    }
+
+    @include media-breakpoint-up(sm) {
+        column-count: var(--card-columns-count);
+        column-gap: var(--card-columns-gap);
+
+        .card {
+            display: inline-block; // Don't let them vertically span multiple columns
+            width: 100%; // Don't let their width change
+        }
+    }
+}
