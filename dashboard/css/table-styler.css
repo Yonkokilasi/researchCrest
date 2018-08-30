@@ -1,135 +1,88 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font: 14px/1.4;
-    font-family: sans-serif;
-}
-
-#page-wrap {
-    margin: 50px;
-}
-
-p {
-    margin: 20px 0;
-}
-
-/* 
-	Generic Styling, for Desktops/Laptops 
-	*/
-
-table {
+.table {
     width: 100%;
-    border-collapse: collapse;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
 }
 
-/* Zebra striping */
-
-tr:nth-of-type(odd) {
-    background: #eee;
+.table th,
+.table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #e9ecef;
 }
 
-th {
-    /*background: #333; */
-    /*color: white; */
-    font-weight: bold;
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #e9ecef;
 }
 
-td,
-th {
-    /*		padding: 6px; 
-		border: 1px solid #ccc;*/
-    text-align: left;
+.table tbody+tbody {
+    border-top: 2px solid #e9ecef;
 }
 
-/* 
-	Max width before this PARTICULAR table gets nasty
-	This query will take effect for any screen smaller than 760px
-	and also iPads specifically.
-	*/
-
-@media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px) {
-    /* Force table to not be like tables anymore */
-    table,
-    thead,
-    tbody,
-    th,
-    td,
-    tr,
-    tfoot {
-        display: block;
-    }
-    /* Hide table headers (but not display: none;, for accessibility) */
-    thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-    tr {
-        border: 1px solid #ccc;
-    }
-    td {
-        /* Behave  like a "row" */
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-        text-align: right;
-        vertical-align: middle;
-    }
-    td:before {
-        /* Now like a table header */
-        position: absolute;
-        /* Top/left values mimic padding */
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-    }
-    /*
-		Label the data
-		*/
-    td:nth-of-type(1):before {
-        content: "ORDER ID: ";
-    }
-    td:nth-of-type(2):before {
-        content: "STATUS: ";
-    }
-    td:nth-of-type(3):before {
-        content: "PAPER TOPIC: ";
-    }
-    td:nth-of-type(4):before {
-        content: "DEADLINE: ";
-    }
-    td:nth-of-type(5):before {
-        content: "DISCIPLINE: ";
-    }
-    td:nth-of-type(6):before {
-        content: "PAGES/ COST: ";
-    }
-    td:nth-of-type(7):before {
-        content: "VIEW: ";
-    }
+.table .table {
+    background-color: white;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    body {
-        padding: 0;
-        margin: 0;
-        width: 320px;
-    }
+.table-sm th,
+.table-sm td {
+    padding: .3rem;
 }
 
-/* iPads (portrait and landscape) ----------- */
+.table-bordered {
+    border: 1px solid #e9ecef;
+}
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    body {
-        width: 495px;
-    }
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #e9ecef;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+    border-bottom-width: 2px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.table-hover tbody tr :hover {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.table .thead-dark th {
+    color: white;
+    background-color: #212529;
+    border-color: #32383e;
+}
+
+.table .thead-light th {
+    color: #495057;
+    background-color: #e9ecef;
+    border-color: #e9ecef;
+}
+
+.table-dark {
+    color: white;
+    background-color: #212529;
+}
+
+.table-dark th,
+.table-dark td,
+.table-dark thead th {
+    border-color: #32383e;
+}
+
+.table-dark.table-bordered {
+    border: 0;
+}
+
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table-dark.table-hover tbody tr :hover {
+    background-color: rgba(255, 255, 255, 0.75);
 }

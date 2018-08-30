@@ -122,7 +122,7 @@ root {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, .125);
-  border-radius: .25rem;
+  border-radius: 1.25rem;
 }
 
 .card>hr {

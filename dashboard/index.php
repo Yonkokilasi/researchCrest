@@ -15,11 +15,9 @@
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='../css/bootstrap.min.css' type='text/css' />
     <link href="css/dashboard.css" rel="stylesheet">
-    <link href="css/widget.css" rel="stylesheet">
     <link href="css/widget-styles.css" rel="stylesheet">
     <link href="css/card.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" type="text/css" media="screen, print" />
-    <link rel="stylesheet" href="css/table-styler.css" type="text/css" media="screen, print" />
 
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -79,7 +77,7 @@
                                         <div class="b-b-1 pt-3"></div>
                                         <hr>
                                         <div class="more-info pt-2">
-                                            <a class="font-weight-bold font-xs btn-block text-muted small" href="#">View
+                                            <a class="font-weight-bold font-xs btn-block text-muted small" href="posted.php">View
                                                 More
                                                 <i class="fa fa-angle-right float-right font-lg"></i>
                                             </a>
