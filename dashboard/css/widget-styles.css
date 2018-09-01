@@ -580,16 +580,13 @@ header.fixed-top {
 }
 
 .menutoggle {
-  background: #e74c3c;
   border-radius: 50%;
-  color: #fff !important;
+  color: black;
   cursor: pointer;
   font-size: 18px;
-  height: 43px;
   line-height: 44px;
-  margin: -2px 20px 0 -57px;
+  margin: -2px 17px 0 0px;
   text-align: center;
-  width: 43px;
 }
 
 .open .menutoggle i:before {
@@ -761,11 +758,11 @@ header .form-inline .search-form.close {
   float: right;
   padding-right: 0;
   position: relative;
+  left: 40px;
 }
 .user-area .user-menu {
-  background: var(--header-bg);
+  background: white;
   border: none;
-  font-family: 'Open Sans';
   left: inherit !important;
   right: 0;
   top: 55px !important;
@@ -1866,10 +1863,6 @@ header .form-inline .search-form.close {
   aside.left-panel .navbar .menu-title {
     line-height: 30px;
     padding: 0;
-  }
-
-  .menutoggle {
-    display: none;
   }
 
   .right-panel {
