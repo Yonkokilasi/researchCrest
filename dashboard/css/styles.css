@@ -32,3 +32,13 @@ body {
     margin: -100px 0 0 -100px;
     /* is width and height divided by two */
 }
+
+.container-fluid.dashboard-container{
+    padding-left: 0px;
+}
+.fa-fw{
+    margin-right: 4rem;
+}
+.fa-list-alt,.fa-dashboard{
+    margin-right: 5rem;
+}

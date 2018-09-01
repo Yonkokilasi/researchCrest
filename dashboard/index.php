@@ -14,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Oxygen|Quicksand|Roboto+Mono|Rubik" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='../css/bootstrap.min.css' type='text/css' />
-    <link href="css/dashboard.css" rel="stylesheet">
     <link href="css/widget-styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link href="css/card.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" type="text/css" media="screen, print" />
 
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" async></script>
@@ -37,7 +38,7 @@
 
             <?//php include('includes/header.php'); ?>
         </nav>
-        <div class="container-fluid">
+        <div class="container-fluid dashboard-container">
             <?php include('includes/sidebar.php'); ?>
 
             <!-- Page Content -->

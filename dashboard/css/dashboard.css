@@ -3,7 +3,6 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
 body {
     background-color: #f8f8f8;
 }
@@ -26,17 +25,17 @@ body {
         border-left: 1px solid #e7e7e7;
     }
 }
-.nav a{
-    color: white;   
+
+.nav a {
+    color: white;
 }
+
 .navbar-default.sidebar {
     font-family: 'Roboto Mono', monospace;
     position: absolute;
     margin-top: 0;
     background-color: #FED18C;
     z-index: 1000;
-    border-radius: 10px;
-    margin-top: 2rem;
     color: white;
 }
 
@@ -114,7 +113,6 @@ body {
 /* .sidebar ul li a.active {
     background-color: #eee;
 } */
-
 .sidebar .arrow {
     float: right;
 }
@@ -133,7 +131,7 @@ body {
 }
 
 .sidebar .nav-second-level li a {
-    padding-left: 37px;
+    padding-left: 5px;
 }
 
 .sidebar .nav-third-level li a {
@@ -144,9 +142,11 @@ body {
     .sidebar {
         z-index: 1;
         position: absolute;
-        width: 250px;
+        width: 271px;
+        height: 100%;
         margin-top: 51px;
     }
+
     .navbar-top-links .dropdown-messages,
     .navbar-top-links .dropdown-tasks,
     .navbar-top-links .dropdown-alerts {
@@ -385,7 +385,7 @@ table.dataTable thead .sorting:after {
     font-size: 23px;
 }
 
-.fa-2x{
+.fa-2x {
     font-size: 20px;
 }
 
@@ -402,7 +402,17 @@ table.dataTable thead .sorting:after {
     transform: rotate(90deg);
 }
 
-.nav>li>a:hover{
+.nav>li>a:hover {
     background-color: #D6EFFF;
     color: #FED18C;
+}
+
+.dashboard-title {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+hr {
+    border-top: 1px solid #e7e7e7;
 }

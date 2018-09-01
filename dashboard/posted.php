@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='../css/bootstrap.min.css' type='text/css' />
     <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link href="css/table-styler.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" type="text/css" media="screen, print" />
     <link rel="stylesheet" href="css/table-styler.css" type="text/css" media="screen, print" />
@@ -37,7 +38,7 @@
 <body>
     <!-- Left Panel -->
 
-    <div class="container-fluid">
+    <div class="container-fluid dashboard-container">
         <?php include('includes/sidebar.php'); ?>
 
         <div id="page-wrapper">

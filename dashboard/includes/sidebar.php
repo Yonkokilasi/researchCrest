@@ -3,6 +3,8 @@ include("../connect.php");
 ?>
 <div class="navbar-default sidebar" role="navigation">
     <div class="sidebar-nav navbar-collapse">
+        <h1 class="dashboard-title"> Research Crest</h1>
+        <hr>
         <ul class="nav" id="side-menu">
             <li>
                 <a href="index.php">
@@ -10,7 +12,7 @@ include("../connect.php");
             </li>
             <li>
                 <a href="#">
-                    ORDERS
+                          <i class="fa fa-list-alt icon-blue fa-fw fa-2x"></i>Orders
                     <span class="pull-right students-sidebar"></span>
                     <i id="second-level-order-trigger" class="fa fa-chevron-right pull-right rotate"></i>
                 </a>
@@ -92,7 +94,7 @@ include("../connect.php");
             <li>
                 <a href="#">
 
-                    </i> Users
+                   <i class="fa fa-users icon-blue fa-fw fa-2x"></i> Users
                     <i id="second-level-user-trigger" class="fa fa-chevron-right pull-right rotate"></i>
                 </a>
                 <ul class="nav nav-second-level users display-none">
@@ -129,7 +131,7 @@ include("../connect.php");
             </li>
             <li>
                 <a href="pages/feedback.php">
-                    <i class="fa fa-list-alt fa-fw icon-blue fa-2x"></i> Feedback
+                    <i class="fa fa-comment fa-fw icon-blue fa-2x"></i> Feedback
                     <span class="pull-right"></span>
                 </a>
             </li>
