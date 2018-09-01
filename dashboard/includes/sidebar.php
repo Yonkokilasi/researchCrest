@@ -1,7 +1,7 @@
 <?php
 include("../connect.php");
 ?>
-<div class="navbar-default sidebar" role="navigation">
+<div class="navbar-default sidebar " role="navigation">
     <div class="sidebar-nav navbar-collapse">
         <h1 class="dashboard-title"> Research Crest</h1>
         <hr>

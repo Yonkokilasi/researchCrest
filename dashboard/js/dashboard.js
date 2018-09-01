@@ -1,5 +1,10 @@
 //Check for new message
 $(document).ready(function () {
+
+    $('#menuToggle').click(function (){
+        $('.navbar-default').slideToggle('collapse');
+    });
+
     $.ajaxSetup({
         cache: false
     }); // This part addresses an IE bug.  without it, IE will only load the first number and will never refresh
