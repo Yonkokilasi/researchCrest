@@ -336,18 +336,6 @@
                             <h3 class="page-header">Admin Dashboard
                                 <small class="breadcrumb pull-right">Dashboard / </small>
                             </h3>
-                            <?php
-                            if (isset($_SESSION["msg"])) {
-                                $msg = $_SESSION["msg"];
-                                echo "
-                                <div class='alert alert-info alert-dismissable'>
-                                    <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                                    $msg
-                                </div>
-                        ";
-                                unset($_SESSION["msg"]);
-                            }
-                            ?>
                         </div>
                         <div class="card-group row">
                             <div class=" col-lg-3 col-md-6 col-xs-12">
