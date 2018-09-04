@@ -7,7 +7,7 @@ header.header {
     width: 100%;
 }
 
-@media (min-width:770px) {
+@media (min-width:750px) {
     .mobile-only {
         display: none;
     }
@@ -21,4 +21,17 @@ header.header {
     .fa-bars{
         font-size:25px;
     }
+    ul.nav>li>a {
+        font-size: 20px;
+    }
+    .dashboard-title>h1{
+        padding-left: 3rem;
+        font-size: 20px;
+        text-align: left;
+    }
+    .dashboard-title .fa{
+        font-size: 2.2rem;
+        color: black;
+    }
+
 }

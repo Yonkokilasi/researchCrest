@@ -44,6 +44,12 @@ body {
     height: 100%;
 }
 
+.negative-margin {
+    margin-top: -76px !important;
+}
+.overflow{
+    overflow: hidden;
+}
 .navbar-top-links {
     margin-right: 0;
 }

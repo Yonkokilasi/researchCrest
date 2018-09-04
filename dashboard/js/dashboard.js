@@ -1,8 +1,16 @@
 //Check for new message
 $(document).ready(function () {
 
-    $('#menuToggle').click(function (){
+    $('#menuToggle').click(function () {
         $('.navbar-default').slideToggle('collapse');
+        $('.navbar-default').toggleClass('negative-margin');
+        $('body').toggleClass('overflow');
+    });
+
+    $('#closeMenu').click(function () {
+          $('.navbar-default').slideToggle('collapse');
+          $('.navbar-default').toggleClass('negative-margin');
+          $('body').toggleClass('overflow');
     });
 
     $.ajaxSetup({

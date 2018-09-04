@@ -138,11 +138,14 @@
         <div class="container-fluid dashboard-container">
 
             <?php include('includes/sidebar.php'); ?>
-            
+
             <div class="mobile-only">
                 <div class="navbar-default sidebar collapse" role="navigation">
                     <div class="sidebar-nav">
-                        <h1 class="dashboard-title"> Research Crest</h1>
+                        <div class="row dashboard-title ">
+                            <h1 class="col-xs-8"> Research Crest</h1>
+                            <i id="closeMenu" class="fa fa-times col-xs-4"></i>
+                        </div>
                         <hr>
                         <ul class="nav" id="side-menu">
                             <li>
