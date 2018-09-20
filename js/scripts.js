@@ -41,9 +41,9 @@ $(document).ready(function () {
         $('.wizard_content_additional_features').show(1000);
         $('.wizard_heading_additional_features').addClass('active_heading');
 
-        
+
     });
-    
+
     // Continue is clicked on additional features section
     $('#next-add').click(function () {
         //Show all other headings
@@ -129,7 +129,7 @@ var forceSubmit = false;
 
 function calculator(value) {
     console.log(value + " value");
-    if(value == "#pages"){
+    if (value == "#pages") {
         console.log("nooooooooo");
     }
     // High School
@@ -142,15 +142,14 @@ function calculator(value) {
     var digitalSources = ""; // Digital sources
     var promoCode = ""; // Promotional Code
     var promoCodes = $('#promoCode').val();
-    
+
     $.post("#", {
-        null:null
+        null: null
     }, function () {
         if (value == "#typeOfWork") {
             type = $(value + " option:selected").val();
             acadlvl = document.querySelector('input[name="level"]:checked').value;
             num = $("#pages").val();
-            console.log("Here we go ", num);
             deadline = $("#deadline").val();
             digitalSources = $("#digitalSources").val();
             sp = document.querySelector('input[name="spacing"]:checked').value;
@@ -226,7 +225,7 @@ function calculator(value) {
             }
         }
         if (value == "#promoCode") {
-            
+
             acadlvl = document.querySelector('input[name="level"]:checked').value;
             deadline = $("#deadline").val();
             sp = document.querySelector('input[name="spacing"]:checked').value;
@@ -254,7 +253,6 @@ function calculator(value) {
         }
 
         result1 = parseFloat(type) * parseFloat(acadlvl) * parseFloat(num) * parseFloat(deadline) * parseFloat(sp) + parseFloat(specificWriter) + parseFloat(digitalSources) + parseFloat('2.0');
-        console.log(result1);
 
         if (isNaN(result1)) {
             return;
