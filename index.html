@@ -808,6 +808,18 @@
         }
     </script>
 
+<script type="text/javascript">
+    function Calculate() {
+        var l = document.getElementById('level').value;
+        var p = document.getElementById('page').value;
+        var d = document.getElementById('deadline').value;
+        var result = l * p * d * 10.5 + 2.0;
+        result = parseFloat(result).toFixed(0);
+        document.getElementById('lblRes').innerHTML = result;
+    }
+</script>
+
+
 </body>
 
 </html>
